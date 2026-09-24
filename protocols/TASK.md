@@ -1,6 +1,6 @@
 # Task Protocol — 選択肢を着手判断できる案へ整える
 
-状態：B-08提案。Human Review・Done承認前。Task、Issue、状態とHuman Gateの定義は[Work Model](../specifications/WORK_MODEL.md)を参照する。
+状態：B-08としてHuman Review承認済み（[PR #18](https://github.com/tanakakeisuke-github/tOS/pull/18)）。Task、Issue、状態とHuman Gateの定義は[Work Model](../specifications/WORK_MODEL.md)を参照する。
 
 ## 入力
 

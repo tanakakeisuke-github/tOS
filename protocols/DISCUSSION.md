@@ -1,6 +1,6 @@
 # Discussion Protocol — 問いを選択肢へ整える
 
-状態：B-08提案。Human Review・Done承認前。Discussionの単位とTaskとの境界は[Work Model](../specifications/WORK_MODEL.md#仕事の単位)を参照する。
+状態：B-08としてHuman Review承認済み（[PR #18](https://github.com/tanakakeisuke-github/tOS/pull/18)）。Discussionの単位とTaskとの境界は[Work Model](../specifications/WORK_MODEL.md#仕事の単位)を参照する。
 
 ## 入力
 
