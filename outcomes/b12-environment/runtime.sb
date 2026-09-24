@@ -1,0 +1,7 @@
+(version 1)
+(allow default)
+(deny file-read-data)
+(allow file-read-data (subpath "/System") (subpath "/usr") (subpath "/bin") (subpath "/sbin") (subpath "/dev") (subpath "/Library") (subpath "/private/var/db/dyld"))
+(allow file-read-data (subpath "/private/tmp/tos-b12-env-investigation/fixture"))
+(deny file-write*)
+(deny network*)

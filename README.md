@@ -56,4 +56,4 @@ visionは設計意図、specificationsは仕様、protocolsは手順を扱いま
 
 ## 今回の停止点
 
-B-12の不合格結果をDraft PRとして提示し、Human Reviewを待ちます。次の判断は失敗原因の調査範囲と修正Task、入力隔離・Model記録の方法です。修正後は新しい固定版で再試験します。
+B-12の旧結果はDraft PR #26でHuman Review待ちです。試験契約の修正はPR #28で承認・反映済みですが、[環境成立確認](outcomes/B12_ENVIRONMENT_CHECK.md)は未達で、改訂後の再試験は未着手です。次は環境を成立させ、実施条件を固定して再試験します。
