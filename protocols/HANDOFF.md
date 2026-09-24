@@ -1,6 +1,6 @@
 # Handoff Protocol — 成果と残課題を次の担当へ渡す
 
-状態：B-09提案。Human Review・Done承認前。本手順は[Session Model](../specifications/SESSION_MODEL.md)の終了・中断時の情報を成果と結ぶ。記録の正本と状態は[Knowledge Architecture](../specifications/KNOWLEDGE_ARCHITECTURE.md)を参照する。
+状態：B-09としてHuman Review承認済み（[PR #20](https://github.com/tanakakeisuke-github/tOS/pull/20)）。本手順は[Session Model](../specifications/SESSION_MODEL.md)の終了・中断時の情報を成果と結ぶ。記録の正本と状態は[Knowledge Architecture](../specifications/KNOWLEDGE_ARCHITECTURE.md)を参照する。
 
 ## 入力
 
