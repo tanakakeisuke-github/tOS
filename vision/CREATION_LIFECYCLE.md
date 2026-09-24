@@ -25,9 +25,9 @@ Playtestで作品体験を確かめながら品質と範囲を育てます。こ
 
 ## 制作中のOS改善
 
-制作中に見つかったOS改善案はTriageへ渡し、原則としてNext / Labで評価します。制作で利用しているCurrentは安定させ、改善案と進行中の作品の作業範囲を分けます。Currentの変更が必要な場合の例外条件・承認者・戻し方は未決定事項として残します。
+制作中に見つかったOS改善案はTriageへ渡し、原則としてNext / Labで評価します。制作で利用しているCurrentは安定させ、改善案と進行中の作品の作業範囲を分けます。Currentの例外変更・人間の承認・Rollbackの判断条件は[Technology Evolution](../specifications/TECHNOLOGY_EVOLUTION.md#freezeと変更の境界)で扱います（B-10仕様案、Human Review待ち）。
 
-採用の流れとVersion Freezeの考え方は[Evolution Model](EVOLUTION_MODEL.md)を参照します。
+進化の設計意図は[Evolution Model](EVOLUTION_MODEL.md)、採用とVersion Freezeの判断条件は[Technology Evolution](../specifications/TECHNOLOGY_EVOLUTION.md)を参照します（B-10仕様案、Human Review待ち）。
 
 ## 完成後の二つの振り返り
 

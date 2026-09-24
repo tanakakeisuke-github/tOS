@@ -1,8 +1,8 @@
 # tOS — Bootstrap Knowledge v0.1 Issue Map
 
-**状態：分解案はPR #2で承認済み。B-01〜B-08は完了。B-09は着手承認済み。**
+**状態：分解案はPR #2で承認済み。B-01〜B-09は完了。B-10は着手承認済み。**
 
-[PR #2](https://github.com/tanakakeisuke-github/tOS/pull/2)は2026-09-24にmainへ反映されました。B-01の担当Issueは[Issue #3](https://github.com/tanakakeisuke-github/tOS/issues/3)です。B-01の成果物は[PR #4](https://github.com/tanakakeisuke-github/tOS/pull/4)で承認・main反映済みで、Issue #3は完了しました。B-02は[PR #6](https://github.com/tanakakeisuke-github/tOS/pull/6)で承認・main反映済み、Issue #5は完了しました。B-03は[PR #8](https://github.com/tanakakeisuke-github/tOS/pull/8)で承認・main反映済み、Issue #7は完了しました。B-04は[PR #10](https://github.com/tanakakeisuke-github/tOS/pull/10)で承認・main反映済み、Issue #9は完了しました。B-05は[PR #12](https://github.com/tanakakeisuke-github/tOS/pull/12)で承認・main反映済み、Issue #11は完了しました。B-06は[PR #14](https://github.com/tanakakeisuke-github/tOS/pull/14)で承認・main反映済み、Issue #13は完了しました。B-07は[PR #16](https://github.com/tanakakeisuke-github/tOS/pull/16)で承認・main反映済み、Issue #15は完了しました。B-08は[PR #18](https://github.com/tanakakeisuke-github/tOS/pull/18)で承認・main反映済み、Issue #17は完了しました。B-09は[Issue #19](https://github.com/tanakakeisuke-github/tOS/issues/19)として登録・着手承認済みで、成果物のDone承認は未実施です。B-10〜B-12は未登録・未着手。登録した候補の実行範囲・承認・進捗は担当Issueを参照します。
+[PR #2](https://github.com/tanakakeisuke-github/tOS/pull/2)は2026-09-24にmainへ反映されました。B-01の担当Issueは[Issue #3](https://github.com/tanakakeisuke-github/tOS/issues/3)です。B-01の成果物は[PR #4](https://github.com/tanakakeisuke-github/tOS/pull/4)で承認・main反映済みで、Issue #3は完了しました。B-02は[PR #6](https://github.com/tanakakeisuke-github/tOS/pull/6)で承認・main反映済み、Issue #5は完了しました。B-03は[PR #8](https://github.com/tanakakeisuke-github/tOS/pull/8)で承認・main反映済み、Issue #7は完了しました。B-04は[PR #10](https://github.com/tanakakeisuke-github/tOS/pull/10)で承認・main反映済み、Issue #9は完了しました。B-05は[PR #12](https://github.com/tanakakeisuke-github/tOS/pull/12)で承認・main反映済み、Issue #11は完了しました。B-06は[PR #14](https://github.com/tanakakeisuke-github/tOS/pull/14)で承認・main反映済み、Issue #13は完了しました。B-07は[PR #16](https://github.com/tanakakeisuke-github/tOS/pull/16)で承認・main反映済み、Issue #15は完了しました。B-08は[PR #18](https://github.com/tanakakeisuke-github/tOS/pull/18)で承認・main反映済み、Issue #17は完了しました。B-09は[PR #20](https://github.com/tanakakeisuke-github/tOS/pull/20)で承認・main反映済み、Issue #19は完了しました。B-10は[Issue #21](https://github.com/tanakakeisuke-github/tOS/issues/21)として登録・着手承認済みで、成果物のDone承認は未実施です。B-11〜B-12は未登録・未着手。登録した候補の実行範囲・承認・進捗は担当Issueを参照します。
 
 これはBootstrap Knowledgeを作るための作業分解案です。下記の成果物パスと検証手順も提案であり、現在存在するファイルと将来の成果物を区別します。初回の保存作業はこのMapまでとし、PR #2の承認後、個別に承認されたB-01へ進みました。
 
@@ -186,13 +186,13 @@
 | OQ-01 | Bootstrap Knowledge受入後、tOS v0.1の実際の範囲・完成条件をどこまでにするか | B-01 / v0.1範囲の承認前。B-12完了だけでは解決しない |
 | OQ-02 | Human Gateの担当・記録形式、mergeとDoneの関係 | B-02・B-05 / 各運用仕様の受入前 |
 | OQ-03 | Role / Actor / Agent / Modelの関係、割当と権限 | B-07のActor Modelを承認済み。具体的な記録形式や交換可能性の検証は未決定・未実施 |
-| OQ-04 | Session継続・Reviewer兼任を許す条件と記録 | B-06・B-09 / 該当手順の受入前 |
+| OQ-04 | Session継続・Reviewer兼任を許す条件と記録 | B-06・B-09で例外記録とHuman判断を承認済み。具体的な許容条件はTaskごとに確認 |
 | OQ-05 | 承認済みSpecificationと新Decisionが競合したときの優先・更新手順 | B-04 / Knowledge仕様の受入前 |
 | OQ-06 | Freeze条件、Currentの例外変更、Projectの版移行・Rollback | B-10 / 進化方針の受入前 |
 | OQ-07 | Project Bootstrapの入力・生成物・承認・自動化範囲 | B-03で境界を整理 / 機能の計画前。後続へ保留可能 |
 | OQ-08 | Context CompilerとHuman Viewの実装時期・評価方法 | B-04・B-06で構想境界を整理 / 実装計画前。後続へ保留可能 |
 | OQ-09 | Fresh Worker試験の対象Model、質問数、採点者・合否基準、再試験条件 | B-11 / B-12のReady前 |
-| OQ-10 | 分解案はPR #2のHuman Reviewで承認済み。個別候補は着手時に粒度を確認する | B-01〜B-08完了、B-09のみ着手承認済み。B-10以降は個別承認待ち |
+| OQ-10 | 分解案はPR #2のHuman Reviewで承認済み。個別候補は着手時に粒度を確認する | B-01〜B-09完了、B-10のみ着手承認済み。B-11以降は個別承認待ち |
 | OQ-11 | PR #2を採用しmainへ反映済み。旧Draft PR #1を閉じるかは未決定 | B-01はPR #2の成果を入力とする。旧案は変更せず保持 |
 
 ## 正本の重複とContext量への対策案

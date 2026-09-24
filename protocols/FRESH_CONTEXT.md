@@ -1,6 +1,6 @@
 # Fresh Context Protocol — 指定入力からTaskを開始・再開する
 
-状態：B-09提案。Human Review・Done承認前。本手順は[Session Model](../specifications/SESSION_MODEL.md)の開始・再開を具体化する。Taskの状態とReady判断は[Task Protocol](TASK.md)、入力の正本・版・承認状態は[Knowledge Architecture](../specifications/KNOWLEDGE_ARCHITECTURE.md)を参照する。
+状態：B-09としてHuman Review承認済み（[PR #20](https://github.com/tanakakeisuke-github/tOS/pull/20)）。本手順は[Session Model](../specifications/SESSION_MODEL.md)の開始・再開を具体化する。Taskの状態とReady判断は[Task Protocol](TASK.md)、入力の正本・版・承認状態は[Knowledge Architecture](../specifications/KNOWLEDGE_ARCHITECTURE.md)を参照する。
 
 ## 入力
 

@@ -1,6 +1,6 @@
 # Review Protocol — 成果を照合しHuman Done判断へ渡す
 
-状態：B-09提案。Human Review・Done承認前。本手順は[Constitution](../CONSTITUTION.md)のDone前Human Gateにつなぐ。Reviewerの分離は[Session Model](../specifications/SESSION_MODEL.md#sessionと担当の原則)、ActorとHumanの責任は[Actor Model](../specifications/ACTOR_MODEL.md)を参照する。
+状態：B-09としてHuman Review承認済み（[PR #20](https://github.com/tanakakeisuke-github/tOS/pull/20)）。本手順は[Constitution](../CONSTITUTION.md)のDone前Human Gateにつなぐ。Reviewerの分離は[Session Model](../specifications/SESSION_MODEL.md#sessionと担当の原則)、ActorとHumanの責任は[Actor Model](../specifications/ACTOR_MODEL.md)を参照する。
 
 ## 入力
 
