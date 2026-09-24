@@ -1,6 +1,6 @@
 # tOS — Constitution
 
-状態：B-02の原則案。Human Review待ち。人間によるDone承認前に、確定した規則として扱わない。
+状態：B-02としてHuman Review承認済み（[PR #6](https://github.com/tanakakeisuke-github/tOS/pull/6)）。原則の具体的な手順は後続Issueで定義する。
 
 ## 変わりにくい原則
 
@@ -15,4 +15,4 @@ Issue、Draft PR、Context Package、Studio Templateなどは、上の原則を�
 
 ## 文書が食い違うとき
 
-この原則案と仕様・Decisionの間に矛盾が見つかった場合、関係する作業を止め、食い違う箇所・版・作業への影響と選択肢を担当IssueまたはReviewに記録して人間に判断を求める。AIが一方を黙って優先したり、例外を確定したりしない。文書間の最終的な優先関係と調停手順はB-04で扱う。
+この原則と仕様・Decisionの間に矛盾が見つかった場合、関係する作業を止め、食い違う箇所・版・作業への影響と選択肢を担当IssueまたはReviewに記録して人間に判断を求める。AIが一方を黙って優先したり、例外を確定したりしない。文書間の最終的な優先関係と調停手順はB-04で扱う。
