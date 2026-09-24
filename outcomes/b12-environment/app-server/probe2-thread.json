@@ -1,0 +1,57 @@
+{
+  "thread": {
+    "id": "01a0d468-56f1-7313-a4c0-540f07fdd9bd",
+    "environments": [],
+    "extra": null,
+    "sessionId": "01a0d468-56f1-7313-a4c0-540f07fdd9bd",
+    "forkedFromId": null,
+    "parentThreadId": null,
+    "preview": "",
+    "ephemeral": true,
+    "section": null,
+    "sectionEnteredAt": null,
+    "projectId": null,
+    "historyMode": "legacy",
+    "modelProvider": "openai",
+    "model": "gpt-6-astra",
+    "reasoningEffort": "medium",
+    "createdAt": 1790270002,
+    "updatedAt": 1790270002,
+    "recencyAt": 1790270002,
+    "status": {
+      "type": "idle"
+    },
+    "path": null,
+    "cwd": "/private/tmp/tos-b12-app-probe-v2/empty",
+    "cliVersion": "0.155.0-alpha.9",
+    "originator": "Codex Desktop",
+    "source": "vscode",
+    "canAcceptDirectInput": true,
+    "threadSource": null,
+    "agentNickname": null,
+    "agentRole": null,
+    "gitInfo": null,
+    "name": null,
+    "daybreakEnabled": null,
+    "turns": []
+  },
+  "model": "gpt-6-astra",
+  "modelProvider": "openai",
+  "serviceTier": "priority",
+  "disabledPluginIds": [],
+  "cwd": "/private/tmp/tos-b12-app-probe-v2/empty",
+  "runtimeWorkspaceRoots": [],
+  "instructionSources": [],
+  "approvalPolicy": "on-request",
+  "approvalsReviewer": "user",
+  "sandbox": {
+    "type": "readOnly",
+    "networkAccess": false
+  },
+  "activePermissionProfile": {
+    "id": ":read-only",
+    "extends": null
+  },
+  "reasoningEffort": "medium",
+  "multiAgentMode": "explicitRequestOnly"
+}
