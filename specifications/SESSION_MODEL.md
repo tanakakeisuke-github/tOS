@@ -1,6 +1,6 @@
 # tOS — Session Model
 
-状態：B-06仕様案。Human Review・Done承認前。承認済みの[Work Model](WORK_MODEL.md)と[Knowledge Architecture](KNOWLEDGE_ARCHITECTURE.md)を入力とする。
+状態：B-06としてHuman Review承認済み（[PR #14](https://github.com/tanakakeisuke-github/tOS/pull/14)）。[Work Model](WORK_MODEL.md)と[Knowledge Architecture](KNOWLEDGE_ARCHITECTURE.md)を入力とする。
 
 本書は短命なAI Sessionから長寿命のTaskを継続するための情報と境界を定める。Taskの状態・Human Gateは[Work Model](WORK_MODEL.md)、知識の正本・版・承認状態は[Knowledge Architecture](KNOWLEDGE_ARCHITECTURE.md)に従う。Sessionの開始や再開はTaskのReady承認、成果の引き渡しはDone承認を意味しない。
 

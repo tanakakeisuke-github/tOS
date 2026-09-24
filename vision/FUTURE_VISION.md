@@ -8,16 +8,7 @@
 
 ## 協働と交換可能性
 
-Human / Cloud AI / Local AIをActorとして扱います。Role / Actor / Agent / Modelを分離し、役割を特定の実行技術へ固定せずに割り当てられる設計を目指します。
-
-以下は用語を読むための説明案です。厳密な関係・権限はIssue MapのB-07で定義します。
-
-| 概念 | 説明案 |
-|---|---|
-| Role | 制作上の責任・期待される仕事 |
-| Actor | 仕事を担う主体。Human / Cloud AI / Local AI |
-| Agent | AIによる仕事の実行を構成する単位 |
-| Model | Agentが利用する推論等の能力を提供するモデル |
+Human / Cloud AI / Local AIの協働と、役割を特定の実行技術へ固定せずに割り当てられる設計を目指します。Role / Actor / Agent / Modelの関係と承認責任は[Actor Model](../specifications/ACTOR_MODEL.md)で扱います（B-07仕様案、Human Review待ち）。
 
 Runtime / Orchestrator / Vendorも交換可能な選択肢として扱います。新しい技術を導入する際、責務と接続条件を保ちながら該当部分を交換でき、OS全体の再設計を必須にしない方向です。具体的なAPIや実行環境は未決定です。
 
@@ -35,4 +26,4 @@ AIにより再構築コストが下がるという見通しのもと、Implement
 
 ## 次の具体化
 
-Purposeは[B-01の仕様](../specifications/PURPOSE.md)で扱っています。Core境界はB-03、Actorの関係はB-07、交換・再構築の評価はB-10で扱う提案です。依存順と未決定事項は[Issue Map](../bootstrap/ISSUE_MAP.md)に集約しています。
+Purposeは[B-01の仕様](../specifications/PURPOSE.md)、Core境界は[Core Architecture](../specifications/CORE_ARCHITECTURE.md)で扱っています。Actorの関係はB-07仕様案、交換・再構築の評価はB-10の提案です。依存順と未決定事項は[Issue Map](../bootstrap/ISSUE_MAP.md)に集約しています。
