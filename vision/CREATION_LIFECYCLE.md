@@ -15,7 +15,7 @@
 | 7 — Release / Complete | 最終品質確認、作品体験の評価、人間の完成判断 | 公開または定義された納品・完成 |
 | 8 — 振り返り | Project RetrospectiveとtOS Retrospectiveを分離 | LearningsをtOS vNextの検討へ戻す |
 
-Phase 2の今回の到達点はKnowledge保存とIssue Map案です。表全体は長期の流れを表し、残りの工程を今回の実行範囲に含めません。Bootstrap Knowledgeの受入と、tOS v0.1全体の完成判断は分けて定義します。
+Phase 2の初回保存（PR #2）の到達点はKnowledge保存とIssue Map案です。表全体は長期の流れです。現在の着手範囲は[Issue Map](../bootstrap/ISSUE_MAP.md)から担当Issueを確認します。Bootstrap Knowledgeの受入と、tOS v0.1全体の完成判断は分けて定義します。
 
 ## Game TemplateでのPhase 6の例
 
