@@ -2,10 +2,10 @@
 
 設計意図・仕様・制作から得た知識を保存するRepository。
 
-**状態：Knowledge保存・Issue Map・B-01〜B-04はHuman Review承認済み。B-05は着手承認済みで、Work Modelの成果物はHuman Review待ちです。**
+**状態：Knowledge保存・Issue Map・B-01〜B-05はHuman Review承認済み。B-06は着手承認済みで、Session Modelの成果物はHuman Review待ちです。**
 tOS v0.1全体の範囲・完成条件は未確定（OQ-01）です。完成・稼働・Freezeや、後続TaskのReadyを意味しません。
 
-新しく参加する場合は[START_HERE](START_HERE.md)から、目的の確認は[Purpose](specifications/PURPOSE.md)から読んでください。現在の担当Issueは[B-05 / #11](https://github.com/tanakakeisuke-github/tOS/issues/11)です。
+新しく参加する場合は[START_HERE](START_HERE.md)から、目的の確認は[Purpose](specifications/PURPOSE.md)から読んでください。現在の担当Issueは[B-06 / #13](https://github.com/tanakakeisuke-github/tOS/issues/13)です。
 
 ## 知りたいことから読む
 
@@ -16,7 +16,8 @@ tOS v0.1全体の範囲・完成条件は未確定（OQ-01）です。完成・�
 | 担当作業をどこから始めるか | [Start Here](START_HERE.md) |
 | tOS / Studio Template / Projectの境界は何か | [Core Architecture](specifications/CORE_ARCHITECTURE.md) — B-03で承認済み |
 | 正式な知識はどこに置き、どう読むのか | [Knowledge Architecture](specifications/KNOWLEDGE_ARCHITECTURE.md) — B-04で承認済み |
-| 検討をどうTaskへ分け、いつ着手・完了するか | [Work Model](specifications/WORK_MODEL.md) — B-05案、Human Review待ち |
+| 検討をどうTaskへ分け、いつ着手・完了するか | [Work Model](specifications/WORK_MODEL.md) — B-05で承認済み |
+| 短いAI Sessionをまたいで仕事をどう引き継ぐか | [Session Model](specifications/SESSION_MODEL.md) — B-06案、Human Review待ち |
 | 将来どこへ向かうのか | [Future Vision](vision/FUTURE_VISION.md) |
 | 設計から制作・完成・学習までどう流れるのか | [Creation Lifecycle](vision/CREATION_LIFECYCLE.md) |
 | 人間とAIはどう仕事を進めるのか | [Operating Model](vision/OPERATING_MODEL.md) |
@@ -36,11 +37,11 @@ tOS v0.1全体の範囲・完成条件は未確定（OQ-01）です。完成・�
 - **Proposal**：今回作成したIssueの切り方、成果物パス、検証方法などの提案。
 - **Open Question**：未決定事項。承認や具体的仕様の代用として扱いません。
 
-visionは設計意図、specificationsは仕様を扱います。仕様案は人間の承認を経て実行上の契約となります。B-01のPurpose、B-02のConstitution、B-03のCore Architecture、B-04のKnowledge Architectureは承認済みです。B-05のWork ModelはHuman Review待ちの仕様案です。Knowledge保存の承認を、仮説の実証や全仕様の承認として扱いません。仕様化する内容はvisionから仕様へ参照をつなぎ、同じ運用規則を二か所で管理しない方針です。
+visionは設計意図、specificationsは仕様を扱います。仕様案は人間の承認を経て実行上の契約となります。B-01のPurpose、B-02のConstitution、B-03のCore Architecture、B-04のKnowledge Architecture、B-05のWork Modelは承認済みです。B-06のSession ModelはHuman Review待ちの仕様案です。Knowledge保存の承認を、仮説の実証や全仕様の承認として扱いません。仕様化する内容はvisionから仕様へ参照をつなぎ、同じ運用規則を二か所で管理しない方針です。
 
 ## 出典と確認範囲
 
-以下は初回のKnowledge保存（PR #2）で確認した範囲です。B-01〜B-05の入力と確認結果は各担当Issueと提出PRを参照してください。
+以下は初回のKnowledge保存（PR #2）で確認した範囲です。B-01〜B-06の入力と確認結果は各担当Issueと提出PRを参照してください。
 
 1. 2026-09-24の本作業依頼：名称、保存内容、Issue Map要件、作業範囲を定める直接の入力。
 2. [参照Discussion「[HQ][DISC] Studio Architecture 001」](https://chatgpt.com/c/6aa96c7c-da58-83ee-be94-c118cf99c5cb)：直近10ターンを確認。制作フロー、Small Issueへの切替、GitHubによるKnowledge保存、引き継ぎへの不安を照合しました。
@@ -49,4 +50,4 @@ visionは設計意図、specificationsは仕様を扱います。仕様案は人
 
 ## 今回の停止点
 
-B-05のWork ModelをDraft PRとして提示し、Human Reviewを待ちます。次の判断はDiscussion・Task・Issueの関係とReady・Done前のHuman Gateを受け入れられるかです。B-06以降は個別の着手判断に従います。
+B-06のSession ModelをDraft PRとして提示し、Human Reviewを待ちます。次の判断は新しいSessionへの引き継ぎ、WorkerとReviewerの分離、停止・再開の条件を受け入れられるかです。B-07以降は個別の着手判断に従います。

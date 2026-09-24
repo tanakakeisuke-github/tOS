@@ -1,6 +1,6 @@
 # tOS — Work Model
 
-状態：B-05の仕様案。Human ReviewとDone承認前。本書の状態名と遷移は**B-05で提案する語彙**であり、既存の自動化やGitHub Projectの設定・運用実績を示さない。
+状態：B-05としてHuman Review承認済み（[PR #12](https://github.com/tanakakeisuke-github/tOS/pull/12)）。本書の状態名と遷移は仕様上の語彙であり、既存の自動化やGitHub Projectの設定・運用実績を示さない。
 
 目的と判断原則は[Purpose](PURPOSE.md)・[Constitution](../CONSTITUTION.md)、知識の正本と承認状態は[Knowledge Architecture](KNOWLEDGE_ARCHITECTURE.md)、媒体間の責務は[Core Architecture](CORE_ARCHITECTURE.md)を参照する。本書は検討から着手・完了までの仕事の単位と境界を定める。
 
@@ -16,7 +16,7 @@
 
 ## Triage、状態、Human Gate
 
-以下の状態名はB-05の提案である。Discussionの案をTriageし、Task化、追加検討、将来版での評価、または却下を人間に見える形で選ぶ。Task化を選んでもReadyにはならない。
+以下の状態名はB-05で承認された仕様上の語彙である。Discussionの案をTriageし、Task化、追加検討、将来版での評価、または却下を人間に見える形で選ぶ。Task化を選んでもReadyにはならない。
 
 | 遷移 | 必要な判断・根拠 |
 |---|---|

@@ -4,7 +4,7 @@
 
 ## 仕事と会話の寿命
 
-**Discussion ≠ Task**。検討と実行を分け、比較的長寿命の仕事を短命なAI Sessionへ渡しても継続できるようにする設計意図です。Discussion / Task / Issueの関係、Taskの粒度と状態・承認点は[Work Model](../specifications/WORK_MODEL.md)に整理しました（B-05仕様案、Human Review待ち）。WorkerとReviewerの分離やSessionの再開方法は後続Issueで具体化します。
+**Discussion ≠ Task**。検討と実行を分け、比較的長寿命の仕事を短命なAI Sessionへ渡しても継続できるようにする設計意図です。Discussion / Task / Issueの関係、Taskの粒度と状態・承認点は[Work Model](../specifications/WORK_MODEL.md)に整理しました（B-05で承認済み）。WorkerとReviewerの分離やSessionの再開方法は[Session Model](../specifications/SESSION_MODEL.md)に整理しました（B-06仕様案、Human Review待ち）。
 
 ## TriageとHuman Gate
 
@@ -28,4 +28,4 @@ GitHubをKnowledgeのSource of Truthとする設計意図です。Knowledgeの�
 
 ## 将来のContext Compiler
 
-TaskごとのContext Packageを生成する構想です。Taskの目的、関連仕様・Decision、必要な成果物、承認状態から読むものを絞り、再開とReviewを支えます。自動生成の方式・品質評価・実装時期は未決定で、当面のContext選定手順はB-04/B-06/B-09で設計する提案です。
+TaskごとのContext Packageを生成する将来構想です。開始・再開時に必要な情報と、この構想の未決定事項は[Session Model](../specifications/SESSION_MODEL.md#検証前の仮説と将来構想)を参照します（B-06仕様案、Human Review待ち）。
