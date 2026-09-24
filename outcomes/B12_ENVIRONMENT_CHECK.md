@@ -1,6 +1,10 @@
 # B-12 — 改訂後の環境成立確認
 
-状態：**環境未成立。改訂後のP/M/Uは未着手・未採点。** 対象は[Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)の開始前確認。承認済み改訂は[PR #28](https://github.com/tanakakeisuke-github/tOS/pull/28)、main `7ab8b092544f6f00b8ca8d791ed6473cfef6cd43`。修正Issue #27は完了している。
+状態：**明示設定と文書Reader移行を確認し、独立Reviewで限定付き採用可能。実Ready待ち。改訂後P/M/Uは未着手・未採点。** 対象は[Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)の開始前確認。承認済み改訂は[PR #28](https://github.com/tanakakeisuke-github/tOS/pull/28)、main `7ab8b092544f6f00b8ca8d791ed6473cfef6cd43`。修正Issue #27は完了している。以下の旧試行の未成立判定は履歴として維持する。
+
+## 最新の到達点
+
+[追加証拠・独立Review](b12-environment/explicit-controls/README.md)を保存。`agents.enabled=false` とSkillのSKILL.md単位無効化により実入力の案内が消失。Reader、Skill、JS直接取得経路を実測し、共通runnerのmanifest文書返却・拒否を検証した。通常Runtimeの設定強制を信頼する範囲で採用可能。全内部操作の完全監査の証明とはしない。具体的な [R4条件と入力](b12-r4-preparation/README.md)へのHuman Readyを求める段階に進んだ。受験はまだ開始していない。
 
 ## 確認したこと
 

@@ -1,64 +1,41 @@
-# 次のチャットへの引き継ぎ — B-12環境確認から再開
+# B-12 次Sessionへの引き継ぎ — R4条件のHuman Ready待ち
 
-更新：2026-09-25。調整・環境担当向けの入口。受験Workerへ配布する資料ではない。
+更新：2026-09-25 JST。調整担当向け。受験Workerへ配布しない。
 
-## 対象と現在地
+## 正本と現在地
 
-正本は [tanakakeisuke-github/tOS](https://github.com/tanakakeisuke-github/tOS)。正式名称はtOS。Greenfieldの媒体非依存Coreを維持する。
+正本は [tanakakeisuke-github/tOS](https://github.com/tanakakeisuke-github/tOS)。[Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)、[Draft PR #26](https://github.com/tanakakeisuke-github/tOS/pull/26)、branch `docs/b12-fresh-worker-acceptance` を使う。mainだけには最新の環境証拠がない。
 
-- Knowledge保存とB-01〜B-11は承認・main反映済み。
-- B-12の契約・哲学の整合修正は [PR #28](https://github.com/tanakakeisuke-github/tOS/pull/28) でmainへ反映済み。[Issue #27](https://github.com/tanakakeisuke-github/tOS/issues/27)は完了。
-- 残タスクは [Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)：B-12 Fresh Worker受入試験。
-- [PR #26](https://github.com/tanakakeisuke-github/tOS/pull/26) はOPEN/Draft。旧試験結果と追加の環境検証・本引き継ぎを保存している。B-12 Doneは未承認。
-- **改訂後P/M/Uは未実施。現在は環境未成立。人間の確認だけを待つ状態ではなく、環境確認の作業が残っている。**
+B-01〜B-11とPR #28の修正は承認・反映済み。B-12は未完了。ユーザーの「ではb-12ををやりましょう」を受け環境確認を継続し、明示的な委譲無効化・Skillファイル単位の無効化、文書Readerへの移行を実測した。独立Reviewerは通常Runtimeの設定強制を信頼する範囲で採用可能と判断した。
 
-本チャットの最終依頼は次チャットへ向けた引き継ぎ整備。ここで新たな受験・merge・制作開始は行っていない。
+**現在は、具体化したR4条件へのHuman Ready判断待ち。P/M/Uは未実施・未採点。** 完全なRuntime内部監査や無条件の隔離証明を主張しない。実Readyは再開依頼から推定していない。
 
-## 再開する場所と読む順番
+## 再開時の読む順番
 
-1. Issue #25とPR #26の最新状態・コメント・headを確認する。
-2. **PR #26のhead branch `docs/b12-fresh-worker-acceptance` にある本書を使う。mainだけでは最新の環境証拠を取得できない。** mainのIssue Mapには古い進捗表示が残るため、実際の状態はIssue/PRと照合する。
-3. [Purpose](../specifications/PURPOSE.md) → [Constitution](../CONSTITUTION.md) → [承認済みAcceptance Plan](ACCEPTANCE_PLAN.md) の開始条件・記録要件を読む。
-4. [今回の追加監査](../outcomes/b12-environment/resume-audit/README.md)を読む。Skill一覧・ダミー拒否をrawイベントで確認したが、標準Skill案内の自動注入が判明した。環境未成立を維持し、Runtime方針の人間判断待ち。続いて[環境確認の総括](../outcomes/B12_ENVIRONMENT_CHECK.md) → [専用Readerの直近検証](../outcomes/b12-environment/app-server/README.md) を読む。必要な原記録だけ追加参照する。
+1. Issue #25・PR #26の最新headとコメントを確認。未保存変更があれば先に確認する。
+2. [R4条件・Ready判断対象](../outcomes/b12-r4-preparation/README.md)。入力、hash、範囲、モデル、初期入力、採点者、停止条件がまとまっている。
+3. [今回の環境証拠](../outcomes/b12-environment/explicit-controls/README.md) → [独立Review](../outcomes/b12-environment/explicit-controls/REVIEW.md)。必要なコード・実記録だけ参照する。
+4. [Acceptance Plan](ACCEPTANCE_PLAN.md)、[Purpose](../specifications/PURPOSE.md)、[Constitution](../CONSTITUTION.md)を照合する。
 
-承認済みKnowledge・試験契約の基準はmain commit `7ab8b092544f6f00b8ca8d791ed6473cfef6cd43`。環境証拠の直近保存commitは `51628ab36741b35a9ce871494ffcb686b997c483`。この引き継ぎの更新はその後のPR #26上にある。記録ブランチのheadと受験用Knowledge版を混同しない。
+Knowledge・設問・計画の基準は `7ab8b092544f6f00b8ca8d791ed6473cfef6cd43`。試験記録ブランチのheadとは別。固定版の古い状態ラベルは書換えず、READYにPR #28の実承認・B-11依存解消・今回の診断のみへの着手を具体化する。
 
-旧チャット全文を再投入しない。哲学修正の理由が必要なときだけ [整合レビュー](PHILOSOPHY_REVIEW.md) を読む。旧回答・採点・本書・採点者用計画は受験Workerへ渡さない。
+## 次の作業
 
-## 確認済みと未確認
+- ユーザーがR4の具体的条件へReady承認した場合だけ、承認者・実際の発言・時点・対象Task・範囲・版・理由・各manifest hashをIssue #25と各READY記録へ保存する。既に承認された場合は同じ承認を再度求めない。
+- 準備フォルダーのP/M/Uは独立入力。READYは未作成。共通runnerは記録形式/hashを検査するが、人間の承認の真偽を自動認定しない。担当者が実承認と照合する。
+- ケースごとの新規ephemeral Sessionで初期3文書だけを投入し、必要文書を固定ID Readerから取得させる。モデル・設定・自動入力・操作・原回答を保存。ケース間で回答を渡さない。
+- 受験者へ旧会話、本書、採点計画、期待回答、他ケース、環境報告を渡さない。
+- 未承認、設定差異、入力不整合、未知の取得経路・自動案内再注入・汚染は停止して記録する。回答が良くても逸脱を合格にしない。
+- 作成担当・受験Sessionから分離したFresh Reviewerが原回答・入力・操作記録・公開基準を照合し、結果をDraft PR #26へ保存。人間の受入判断で停止する。
 
-| 項目 | 確認結果 |
-|---|---|
-| 実行環境 | Codex CLI `0.155.0-alpha.9`、app-server、新規ephemeral session。ランタイム応答は `gpt-6-astra` / `medium`。 |
-| 選択環境・自動読込 | 応答上は空。ただし追加監査の実入力には標準Skill案内が現れた。自動読込なしとは認定しない。 |
-| 専用Reader | 固定IDからダミー本文を返す。許可IDは成功、範囲外の相対/絶対パス指定は拒否。要求・返却を調整側ログで確認済み。 |
-| 残る取得経路 | Workerの報告にはSkill取得・他Agentへの委譲が残る。これらのアクセス制限・委譲先への制約継承は未確認。 |
-| ログ | Reader要求と返却、実行設定応答を保存。追加監査ではraw tool call/outputも取得したが、サーバー内部の全操作を網羅する監査は未成立。 |
-| 本試験 | 修正版では未実施・未採点。環境の問題をKnowledge不合格と扱わない。 |
+## 承認と履歴
 
-専用Readerが動くことと、全経路の隔離が成立することを区別する。ツールの不存在や全操作の遵守をWorkerの自己申告だけで認定しない。
+OpenAI Codex `gpt-6-astra`へ試験資料を送ることは [R3再開前記録](https://github.com/tanakakeisuke-github/tOS/issues/25#issuecomment-5818091607)の承認範囲内。同一範囲の送信承認を重ねて求めない。別送信先・課金経路へ一般化しない。
 
-既に試した経路：Codex custom profileはダミー禁止ファイルも読めた。OSの限定ディレクトリ制限は部分成功、全体読取制限は起動失敗。app-serverのcode-mode hostまで止めると必要Readerも動かなかった。同条件の再試行だけを繰り返さず、変える条件・得たい証拠を明確にする。
+初回/R3の未達、R2中断、旧環境の未成立は保存する。今回の判定で遡及再採点しない。旧履歴は [環境総括](../outcomes/B12_ENVIRONMENT_CHECK.md) と [前回監査](../outcomes/b12-environment/resume-audit/README.md) から辿れる。
 
-## 次の担当の小さな目的
+B-12の受入は、最初の知識・引き継ぎ方法の検証。tOSは実コンテンツ制作とフィードバックによってリデザインし続けるもので、この試験を全体の最終完成・Freezeと扱わない。個別TaskのReady/Doneは人間が判断する。
 
-**最初の目的は「許可資料を読め、禁止資料を全取得経路から参照できず、その証拠を保存できる試験環境を成立させること」。** 合格回答を得ることを先に目指さない。
+## ローカル補助
 
-1. 残るSkill・委譲等の取得経路を制限・監査できる実効構成を確認する。ダミー資料で許可/拒否・モデル設定・記録取得を検証する。
-2. 成立した場合、Knowledge/設問版、P/M/Uごとの入力一覧・ハッシュ、モデル設定、担当・採点者、実際のReady承認をIssue #25へ固定する。条件はAcceptance Planを参照する。
-3. Readyを確認後、ケースごとに独立したFresh SessionでP/M/Uを実施する。Pは理解説明、Mは不足資料への対応、Uは未承認Taskへの対応。基準・閾値・初期入力を回答後に変えない。
-4. 独立Reviewerが原回答・入力・操作記録・公開基準を照合し、結果をPR #26から辿れるように保存する。人間が受入を判断する。
-
-環境が検証不能なら、未達の条件と具体的な選択肢・影響を人間へ返す。別Runtimeや条件変更の案は既存方針と分け、採用済みと扱わない。B-12完了後もBootstrap Knowledge受入とtOS本体完成・Freezeは別判断である。
-
-## 承認と履歴の扱い
-
-試験用tOS資料・設問をOpenAI Codex `gpt-6-astra`へ送ることは、送信先・内容を説明後のユーザー回答「codexにしてもらうか」を受け、[Issue #25のR3再開前記録](https://github.com/tanakakeisuke-github/tOS/issues/25#issuecomment-5818091607)へ保存済み。同一範囲の送信承認を重ねて求める必要はない。ただし、改訂後の実試験条件・版を確定したReadyとは区別する。別の送信先や範囲へ一般化しない。
-
-初回とR3は受入条件未達、R2は中断。旧結果は保存し、修正版の基準で遡及再採点しない。直近の環境追加記録は自己確認済み、独立Reviewは未実施。旧Draft PR #1は履歴上の旧案として開いたまま、閉じる判断は未決定。
-
-## ローカル補助情報
-
-前担当の作業cloneは `/private/tmp/tos-b07-20260925`。利用するならremote・branch・未保存変更を先に確認する。消えている場合はGitHubのPR #26から復元できる。ChatGPT同期ディレクトリの `sources/` は読取専用。
-
-`/private/tmp/tos-b12-r4/` に準備したP/M/U入力が残っていても、Ready未確定の作業途中資料であり使用許可済みfixtureではない。承認済みテンプレートから改めて版と入力を固定する。再開に一時ディレクトリの存在を必須としない。
+作業cloneは `/private/tmp/tos-b07-20260925`。remote・branch・statusを確認して使用する。消失時はPR #26から復元可能。ChatGPT同期の `sources/` は読取専用。古い `/private/tmp/tos-b12-r4/` の入力は使わず、今回のR4準備フォルダーを正本とする。

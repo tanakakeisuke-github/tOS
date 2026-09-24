@@ -1,0 +1,53 @@
+{
+  "START_HERE.md": {
+    "sha256": "060353f50d093825c122e6f921a625e295e80d32de6d4c0d40e2f5d3fc428550",
+    "source_commit": "7ab8b092544f6f00b8ca8d791ed6473cfef6cd43",
+    "source_path": "START_HERE.md"
+  },
+  "specifications/PURPOSE.md": {
+    "sha256": "c4a5b46df68bd17208f9cc96f1678e3009f7d53fbd68c7b1c44087dc54a27eda",
+    "source_commit": "7ab8b092544f6f00b8ca8d791ed6473cfef6cd43",
+    "source_path": "specifications/PURPOSE.md"
+  },
+  "CONSTITUTION.md": {
+    "sha256": "9beb9a95961bce64f690b86a1ac7aebc56bb2205ac4063796b6a7b14f849f9d5",
+    "source_commit": "7ab8b092544f6f00b8ca8d791ed6473cfef6cd43",
+    "source_path": "CONSTITUTION.md"
+  },
+  "specifications/WORK_MODEL.md": {
+    "sha256": "f4d74a4d0044e4a22823f9d122e1bd74f07e481349ab0f6505bd1dda085821c6",
+    "source_commit": "7ab8b092544f6f00b8ca8d791ed6473cfef6cd43",
+    "source_path": "specifications/WORK_MODEL.md"
+  },
+  "specifications/KNOWLEDGE_ARCHITECTURE.md": {
+    "sha256": "7d84fde3bac486d4561bf275a09eedf077895dc8eaec48bdbc464e25886b5299",
+    "source_commit": "7ab8b092544f6f00b8ca8d791ed6473cfef6cd43",
+    "source_path": "specifications/KNOWLEDGE_ARCHITECTURE.md"
+  },
+  "specifications/SESSION_MODEL.md": {
+    "sha256": "d563e7269f3e8a5ceb963724531a70a40bba7e99541b71b6b65a22ab78866e1a",
+    "source_commit": "7ab8b092544f6f00b8ca8d791ed6473cfef6cd43",
+    "source_path": "specifications/SESSION_MODEL.md"
+  },
+  "vision/CREATION_LIFECYCLE.md": {
+    "sha256": "b6c000505cbe62121f3abe1a569cb31d39e845f95db45c2df893bd08542f892e",
+    "source_commit": "7ab8b092544f6f00b8ca8d791ed6473cfef6cd43",
+    "source_path": "vision/CREATION_LIFECYCLE.md"
+  },
+  "specifications/CORE_ARCHITECTURE.md": {
+    "sha256": "1504681d5fe6134f721ee78c91b7ad41ff7346721a634d347a1fe4b85c52b08e",
+    "source_commit": "7ab8b092544f6f00b8ca8d791ed6473cfef6cd43",
+    "source_path": "specifications/CORE_ARCHITECTURE.md"
+  },
+  "bootstrap/ISSUE_MAP.md": {
+    "sha256": "f522fed29df69b37e234f18a9a1fb4f067bcefb33a94b4c06d53a94ea91557b7",
+    "source_commit": "7ab8b092544f6f00b8ca8d791ed6473cfef6cd43",
+    "source_path": "bootstrap/ISSUE_MAP.md"
+  },
+  "CASE_TASK.md": {
+    "sha256": "4f463383d255daab0b82b916f8622cca0aefdf6a1268f6332300f6957e9003e1",
+    "source_commit": "7ab8b092544f6f00b8ca8d791ed6473cfef6cd43",
+    "source_path": "bootstrap/acceptance/P.md",
+    "adaptation": "Only title and metadata resolved; criteria and diagnostic conditions unchanged"
+  }
+}
