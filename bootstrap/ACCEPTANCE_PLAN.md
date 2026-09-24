@@ -1,6 +1,6 @@
 # B-12 — Fresh Worker Acceptance Plan
 
-状態：B-11 / Issue #23 の事前計画案。B-12は未実施、合否未判定。対象commitは**B-11の修正がmainへ反映された後、B-12 Ready前に人間が指定して固定する**。将来のSHAをここでは仮定しない。[Integration Review](INTEGRATION_REVIEW.md)のIR-01・IR-02とblocking判断が解消し、B-11 Doneとこの計画のHuman Reviewを経ることを開始条件とする。
+状態：B-11の事前計画としてHuman Review承認済み（[PR #24](https://github.com/tanakakeisuke-github/tOS/pull/24)）。B-12の実施結果と合否は[Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)とOutcomeで確認する。対象commitはB-12のReady前に人間が指定して固定する。[Integration Review](INTEGRATION_REVIEW.md)のIR-01・IR-02とblocking判断の解消、B-11 Done、この計画のHuman Reviewを開始条件とする。
 
 ## 試験の固定事項と入力
 

@@ -1,6 +1,6 @@
 # tOS — Start Here
 
-状態：B-10まで承認済み。B-11の横断レビューと受入試験計画はHuman Review待ち。
+状態：B-11まで承認済み。B-12のFresh Worker受入試験は不合格で、結果はHuman Review待ち。
 
 1. [Purpose](specifications/PURPOSE.md)で目的・現在の範囲・未決定事項を確認します。
 2. [Constitution](CONSTITUTION.md)で判断原則とHuman Gateを確認します。B-02の原則は承認済みです。
@@ -8,4 +8,4 @@
 
 **割当または着手承認がなければ、作業を始めず人間に確認します。** 必須入力が不足・矛盾している場合や、承認範囲を越える判断が必要な場合は、影響する作業を止め、判断が必要な点を伝えます。将来構想・仮説・Open Questionを承認済み要件として補いません。
 
-現在の作業は[B-11 / Issue #23](https://github.com/tanakakeisuke-github/tOS/issues/23)です。基準commitと入力は担当Issueを確認します。成果物はDraft PRでHuman Reviewを待ち、Doneや後続Issueの開始を自動的に決めません。
+現在の作業は[B-12 / Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)です。基準commitと入力は担当Issueを確認します。試験結果はDraft PRでHuman Reviewを待ち、DoneやtOS v0.1全体の完成を自動的に決めません。
