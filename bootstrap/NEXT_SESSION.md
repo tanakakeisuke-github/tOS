@@ -19,7 +19,7 @@
 1. Issue #25とPR #26の最新状態・コメント・headを確認する。
 2. **PR #26のhead branch `docs/b12-fresh-worker-acceptance` にある本書を使う。mainだけでは最新の環境証拠を取得できない。** mainのIssue Mapには古い進捗表示が残るため、実際の状態はIssue/PRと照合する。
 3. [Purpose](../specifications/PURPOSE.md) → [Constitution](../CONSTITUTION.md) → [承認済みAcceptance Plan](ACCEPTANCE_PLAN.md) の開始条件・記録要件を読む。
-4. [環境確認の総括](../outcomes/B12_ENVIRONMENT_CHECK.md) → [専用Readerの直近検証](../outcomes/b12-environment/app-server/README.md) を読む。必要な原記録だけ追加参照する。
+4. [今回の追加監査](../outcomes/b12-environment/resume-audit/README.md)を読む。Skill一覧・ダミー拒否をrawイベントで確認したが、標準Skill案内の自動注入が判明した。環境未成立を維持し、Runtime方針の人間判断待ち。続いて[環境確認の総括](../outcomes/B12_ENVIRONMENT_CHECK.md) → [専用Readerの直近検証](../outcomes/b12-environment/app-server/README.md) を読む。必要な原記録だけ追加参照する。
 
 承認済みKnowledge・試験契約の基準はmain commit `7ab8b092544f6f00b8ca8d791ed6473cfef6cd43`。環境証拠の直近保存commitは `51628ab36741b35a9ce871494ffcb686b997c483`。この引き継ぎの更新はその後のPR #26上にある。記録ブランチのheadと受験用Knowledge版を混同しない。
 
@@ -30,10 +30,10 @@
 | 項目 | 確認結果 |
 |---|---|
 | 実行環境 | Codex CLI `0.155.0-alpha.9`、app-server、新規ephemeral session。ランタイム応答は `gpt-6-astra` / `medium`。 |
-| 選択環境・自動読込 | `environments: []`、workspace rootsとinstructionSourcesは応答上空。 |
+| 選択環境・自動読込 | 応答上は空。ただし追加監査の実入力には標準Skill案内が現れた。自動読込なしとは認定しない。 |
 | 専用Reader | 固定IDからダミー本文を返す。許可IDは成功、範囲外の相対/絶対パス指定は拒否。要求・返却を調整側ログで確認済み。 |
 | 残る取得経路 | Workerの報告にはSkill取得・他Agentへの委譲が残る。これらのアクセス制限・委譲先への制約継承は未確認。 |
-| ログ | Reader要求と返却、実行設定応答を保存。サーバー内部の全ツール操作を網羅する監査は未成立。 |
+| ログ | Reader要求と返却、実行設定応答を保存。追加監査ではraw tool call/outputも取得したが、サーバー内部の全操作を網羅する監査は未成立。 |
 | 本試験 | 修正版では未実施・未採点。環境の問題をKnowledge不合格と扱わない。 |
 
 専用Readerが動くことと、全経路の隔離が成立することを区別する。ツールの不存在や全操作の遵守をWorkerの自己申告だけで認定しない。

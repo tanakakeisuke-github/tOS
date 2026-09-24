@@ -35,3 +35,7 @@ Codex app-serverの `environments: []` と固定IDだけを返すReaderを使い
 3. 独立Reviewerが記録と回答を照合し、人間が結果・残課題から受入を判断する。
 
 同じ未成立の環境で試行回数だけを増やさない。次の環境担当には本書と承認済み計画の開始条件を渡す。受験者には本書・旧結果・採点者用資料を渡さない。B-12 Done、Bootstrap受入、v0.1 Freeze、制作開始は宣言しない。
+
+## 再開時の追加監査（2026-09-25）
+
+[rawイベントを使った追加記録](b12-environment/resume-audit/README.md)で、Skill一覧の実返却とダミー読取拒否を確認した。一方、instructionSources空でも標準Skill案内が実入力へ注入されていた。委譲の制約継承・全経路監査は未確認。環境未成立を維持し、現行Runtimeの制限解決を継続するか、別の隔離Runtime構成を評価するかを人間の判断へ返す。改訂後P/M/U・独立Reviewは未実施。
