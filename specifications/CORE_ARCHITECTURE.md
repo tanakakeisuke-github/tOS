@@ -1,6 +1,6 @@
 # tOS — Core Architecture Boundaries
 
-状態：B-03としてHuman Review承認済み（[PR #8](https://github.com/tanakakeisuke-github/tOS/pull/8)）。実装済みの構成やtOS v0.1全体の確定範囲を示すものではない。
+状態：B-03としてHuman Review承認済み（[PR #8](https://github.com/tanakakeisuke-github/tOS/pull/8)）。実装済みの構成やtOS v0.1全体の確定範囲を示すものではない。具体化と依存の方向の表記修正は[PR #28](https://github.com/tanakakeisuke-github/tOS/pull/28)で承認・main反映済み。
 
 目的と保持する知識は[Purpose](PURPOSE.md)、判断原則とHuman Gateは[Constitution](../CONSTITUTION.md)を参照する。本書はそれらを繰り返さず、媒体をまたぐ境界と交換点を定める案である。
 
@@ -12,7 +12,7 @@
 | **Studio Template** | Coreの共通枠組みを媒体の制作へ具体化する。専門Role、成果物、制作段階、品質評価と媒体固有の引き継ぎを定める。 | 適用するCoreの版・共通枠組み、媒体の制作知識と評価観点。 | Templateの版、媒体固有のRole・成果物・Workflow・評価観点をProjectが選べる形にしたもの。 |
 | **Project** | 一つの作品・製品について目的、体験、制約、優先順位、制作範囲と完成判断を具体化し、作業を進める。 | 選んだCoreとTemplateの版、作品の目的・制約、制作上の判断と素材。 | 作品の成果物、個々の仕事の結果・評価・判断履歴、Projectの学びとtOSへの改善提案。 |
 
-主な具体化の方向は **Project → Studio Template → tOS Core**。ProjectはTemplateの媒体上の約束に加え、Coreの共通の仕事・知識・承認の約束も直接使う。TemplateはCoreの共通枠組みを使う。Coreは特定のTemplate、Project、作品内容、媒体の制作段階に依存しない。Projectから得た学びをCoreへ戻す場合も、提案・評価・人間の判断を経て次版を検討し、進行中のCoreを暗黙に書き換えない。
+共通の枠組みを具体化する方向は **tOS Core → Studio Template → Project**。規則を参照する依存方向は **Project → Studio Template → tOS Core**。ProjectはTemplateの媒体上の約束に加え、Coreの共通の仕事・知識・承認の約束も直接使う。TemplateはCoreの共通枠組みを使う。Coreは特定のTemplate、Project、作品内容、媒体の制作段階に依存しない。Projectから得た学びをCoreへ戻す場合も、提案・評価・人間の判断を経て次版を検討し、進行中のCoreを暗黙に書き換えない。
 
 Coreの最小境界は「仕事と知識を版・出所・判断状態とともに渡し、ReviewとHuman Gateへ接続できること」までとする設計案である。保存形式、権限モデル、状態名、実行手順、具体的なToolは後続設計で定める。
 
