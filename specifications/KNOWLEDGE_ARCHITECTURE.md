@@ -1,6 +1,6 @@
 # tOS — Knowledge Architecture
 
-状態：B-04の仕様案。Human ReviewとDone承認前。対象はKnowledgeの正本、参照、状態、Task別の読み方であり、保存システムやContext Compilerの実装を定めない。
+状態：B-04としてHuman Review承認済み（[PR #10](https://github.com/tanakakeisuke-github/tOS/pull/10)）。対象はKnowledgeの正本、参照、状態、Task別の読み方であり、保存システムやContext Compilerの実装を定めない。
 
 [Purpose](PURPOSE.md)は承認済みの目的・範囲、[Constitution](../CONSTITUTION.md)は承認済みの原則とHuman Gateの正本である。本書は両者の規範を再掲せず、知識を引き継ぐ際の配置と判断経路を定める。tOS v0.1全体の範囲と完成条件（OQ-01）は未決定のままである。
 

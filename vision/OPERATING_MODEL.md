@@ -4,20 +4,11 @@
 
 ## 仕事と会話の寿命
 
-**Discussion ≠ Task**。Discussionは問いや選択肢を検討する場、Taskは実行する小さな目的です。Discussion / Taskは比較的長寿命で、AI Sessionは短命です。Sessionが終わっても判断・成果・残課題から仕事を再開できるようにします。
-
-**1 Task = 1 small objective**。分割の基準は、Fresh AIが一度のSessionで理解→作成→自己確認できる認知負荷です。ファイル数や時間だけで機械的に区切る考え方ではありません。
-
-**1 Issue = 原則1 Fresh Worker**。WorkerとReviewerは可能な限りFreshかつ分離し、Reviewerが成果物・受入条件・根拠を独立に確認します。継続Sessionや兼任が必要な例外と、その記録方法は後続設計で明示します。
+**Discussion ≠ Task**。検討と実行を分け、比較的長寿命の仕事を短命なAI Sessionへ渡しても継続できるようにする設計意図です。Discussion / Task / Issueの関係、Taskの粒度と状態・承認点は[Work Model](../specifications/WORK_MODEL.md)に整理しました（B-05仕様案、Human Review待ち）。WorkerとReviewerの分離やSessionの再開方法は後続Issueで具体化します。
 
 ## TriageとHuman Gate
 
-Discussionから出た案・課題をTriageし、Taskにするか、追加検討するか、次版の評価へ送るか整理します。
-
-- **Ready前Human Gate**：目的、範囲、入力、受入条件、依存を人間が確認し、着手を承認する。
-- **Done前Human Gate**：成果、Review、必要な検証、未解決事項を人間が確認し、完了を承認する。
-
-AIの自己確認はこれらのGateを置き換えません。Gateの記録形式、担当者、PRのmergeとの関係は未決定です。
+検討中の案を人間が判断できる仕事へ整え、着手と完了の前に人間の判断を置く設計意図です。Triage、Ready・Done前のHuman Gateと記録の扱いは[Work Model](../specifications/WORK_MODEL.md#triage状態human-gate)を参照してください。具体的な実行手順は後続のProtocolで扱います。
 
 ## STOP / SPLIT / PROPOSE
 
@@ -33,7 +24,7 @@ AIの自己確認はこれらのGateを置き換えません。Gateの記録形�
 
 **Chat is disposable. Knowledge is permanent.**
 
-GitHubをKnowledgeのSource of Truthとする設計意図です。Knowledgeの分類・優先度、版と承認状態、Task別の読み順、TranscriptとOpen Questionの扱いは[Knowledge Architecture](../specifications/KNOWLEDGE_ARCHITECTURE.md)に整理しました（B-04仕様案、Human Review待ち）。Human ViewとAI Onboarding Knowledgeの分離は[FindingsのF-03](../bootstrap/FINDINGS.md#f-03--human-viewとai-onboarding)に記録した仮説として検証します。
+GitHubをKnowledgeのSource of Truthとする設計意図です。Knowledgeの分類・優先度、版と承認状態、Task別の読み順、TranscriptとOpen Questionの扱いは[Knowledge Architecture](../specifications/KNOWLEDGE_ARCHITECTURE.md)に整理しました（B-04で承認済み）。Human ViewとAI Onboarding Knowledgeの分離は[FindingsのF-03](../bootstrap/FINDINGS.md#f-03--human-viewとai-onboarding)に記録した仮説として検証します。
 
 ## 将来のContext Compiler
 
