@@ -2,18 +2,19 @@
 
 設計意図・仕様・制作から得た知識を保存するRepository。
 
-**状態：Knowledge保存・Issue Map・B-01はHuman Review承認済み。B-02は着手承認済みで、Constitutionの成果物はHuman Review待ちです。**
+**状態：Knowledge保存・Issue Map・B-01・B-02はHuman Review承認済み。B-03は着手承認済みで、Core Architectureの成果物はHuman Review待ちです。**
 tOS v0.1全体の範囲・完成条件は未確定（OQ-01）です。完成・稼働・Freezeや、後続TaskのReadyを意味しません。
 
-新しく参加する場合は[START_HERE](START_HERE.md)から、目的の確認は[Purpose](specifications/PURPOSE.md)から読んでください。現在の担当Issueは[B-02 / #5](https://github.com/tanakakeisuke-github/tOS/issues/5)です。
+新しく参加する場合は[START_HERE](START_HERE.md)から、目的の確認は[Purpose](specifications/PURPOSE.md)から読んでください。現在の担当Issueは[B-03 / #7](https://github.com/tanakakeisuke-github/tOS/issues/7)です。
 
 ## 知りたいことから読む
 
 | 問い | 保存先 |
 |---|---|
 | なぜ作るのか、何を引き継ぐのか | [Purpose](specifications/PURPOSE.md) — B-01で承認済み |
-| 変わりにくい判断原則は何か | [Constitution](CONSTITUTION.md) — B-02案、Human Review待ち |
+| 変わりにくい判断原則は何か | [Constitution](CONSTITUTION.md) — B-02で承認済み |
 | 担当作業をどこから始めるか | [Start Here](START_HERE.md) |
+| tOS / Studio Template / Projectの境界は何か | [Core Architecture](specifications/CORE_ARCHITECTURE.md) — B-03案、Human Review待ち |
 | 将来どこへ向かうのか | [Future Vision](vision/FUTURE_VISION.md) |
 | 設計から制作・完成・学習までどう流れるのか | [Creation Lifecycle](vision/CREATION_LIFECYCLE.md) |
 | 人間とAIはどう仕事を進めるのか | [Operating Model](vision/OPERATING_MODEL.md) |
@@ -33,11 +34,11 @@ tOS v0.1全体の範囲・完成条件は未確定（OQ-01）です。完成・�
 - **Proposal**：今回作成したIssueの切り方、成果物パス、検証方法などの提案。
 - **Open Question**：未決定事項。承認や具体的仕様の代用として扱いません。
 
-visionは設計意図、specificationsは仕様を扱います。仕様案は人間の承認を経て実行上の契約となります。B-01のPurposeは承認済みです。B-02のConstitutionはHuman Review待ちの原則案です。Knowledge保存の承認を、仮説の実証や全仕様の承認として扱いません。仕様化する内容はvisionから仕様へ参照をつなぎ、同じ運用規則を二か所で管理しない方針です。
+visionは設計意図、specificationsは仕様を扱います。仕様案は人間の承認を経て実行上の契約となります。B-01のPurposeは承認済みです。B-02のConstitutionは承認済みです。B-03のCore ArchitectureはHuman Review待ちの仕様案です。Knowledge保存の承認を、仮説の実証や全仕様の承認として扱いません。仕様化する内容はvisionから仕様へ参照をつなぎ、同じ運用規則を二か所で管理しない方針です。
 
 ## 出典と確認範囲
 
-以下は初回のKnowledge保存（PR #2）で確認した範囲です。B-01・B-02の入力と確認結果は各担当Issueと提出PRを参照してください。
+以下は初回のKnowledge保存（PR #2）で確認した範囲です。B-01〜B-03の入力と確認結果は各担当Issueと提出PRを参照してください。
 
 1. 2026-09-24の本作業依頼：名称、保存内容、Issue Map要件、作業範囲を定める直接の入力。
 2. [参照Discussion「[HQ][DISC] Studio Architecture 001」](https://chatgpt.com/c/6aa96c7c-da58-83ee-be94-c118cf99c5cb)：直近10ターンを確認。制作フロー、Small Issueへの切替、GitHubによるKnowledge保存、引き継ぎへの不安を照合しました。
@@ -46,4 +47,4 @@ visionは設計意図、specificationsは仕様を扱います。仕様案は人
 
 ## 今回の停止点
 
-B-02のConstitutionと入口の更新をDraft PRとして提示し、Human Reviewを待ちます。次の判断は、原則と人間が判断する境界を受け入れられるかです。B-03以降は個別の着手判断に従います。
+B-03のCore ArchitectureをDraft PRとして提示し、Human Reviewを待ちます。次の判断はCore / Studio Template / Projectの境界と交換箇所を受け入れられるかです。B-04以降は個別の着手判断に従います。
