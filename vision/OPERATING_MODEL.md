@@ -1,6 +1,6 @@
 # tOS — Operating Model
 
-状態：依頼で指定された運用思想の保存。実行可能な詳細仕様・ProtocolはIssue Mapの後続成果物。
+状態：依頼で指定された運用思想の保存。仕事のモデルはB-05で承認済み、入口ProtocolはB-08のHuman Review待ち。
 
 ## 仕事と会話の寿命
 
@@ -8,17 +8,11 @@
 
 ## TriageとHuman Gate
 
-検討中の案を人間が判断できる仕事へ整え、着手と完了の前に人間の判断を置く設計意図です。Triage、Ready・Done前のHuman Gateと記録の扱いは[Work Model](../specifications/WORK_MODEL.md#triage状態human-gate)を参照してください。具体的な実行手順は後続のProtocolで扱います。
+検討中の案を人間が判断できる仕事へ整え、着手と完了の前に人間の判断を置く設計意図です。Triage、Ready・Done前のHuman Gateと記録の扱いは[Work Model](../specifications/WORK_MODEL.md#triage状態human-gate)を参照してください。検討からReady前判断への手順は[Discussion](../protocols/DISCUSSION.md)・[Task](../protocols/TASK.md)・[Triage](../protocols/TRIAGE.md)に整理しました（B-08案、Human Review待ち）。
 
 ## STOP / SPLIT / PROPOSE
 
-この三つを、範囲と不確実性を扱う基本の判断として残します。以下の具体的説明はProtocol化する際の提案です。
-
-| 判断 | 説明案 |
-|---|---|
-| STOP | 入力不足・矛盾・承認不足などで判断できない点と再開条件を残して止まる |
-| SPLIT | 目的や認知負荷が大きい場合、分割案と依存を提示して着手範囲を見直す |
-| PROPOSE | 追加の改善は根拠・影響・検証案を添え、現在のTaskと別にTriageへ渡す |
+この三つを、範囲と不確実性を扱う基本の判断として残します。各場面での停止・分割・別提案の手順は上記の入口Protocolに置き、ここでは運用規則を重ねて定めません。
 
 ## 知識を引き継ぐ
 

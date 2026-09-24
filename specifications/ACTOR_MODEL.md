@@ -1,6 +1,6 @@
 # tOS — Actor Model
 
-状態：B-07仕様案。Human Review・Done承認前。本書の分類と割当規則は設計上の定義であり、Actorの稼働や交換の実証を示さない。
+状態：B-07としてHuman Review承認済み（[PR #16](https://github.com/tanakakeisuke-github/tOS/pull/16)）。本書の分類と割当規則は設計上の定義であり、Actorの稼働や交換の実証を示さない。
 
 本書は制作上の責任と、それを担う主体・AIの実行構成・モデルを分ける。[Constitution](../CONSTITUTION.md)のHuman Gate、[Work Model](WORK_MODEL.md)のTaskと状態、[Session Model](SESSION_MODEL.md)のWorkerとReviewerを前提とする。媒体固有のRoleは[Core Architecture](CORE_ARCHITECTURE.md)に従いStudio Templateで具体化する。
 
@@ -33,4 +33,4 @@ Roleの割当は対象Taskの目的・範囲・受入条件に結び、担当Iss
 
 Runtime / Orchestrator / Vendorの責務と交換時の受け渡しは[Core Architectureの「実行技術との交換点」](CORE_ARCHITECTURE.md#実行技術との交換点)を参照する。本書はRole・担当主体・AI実行構成の関係を定めるもので、その交換契約、API、製品選定、実装方法を重ねて定めない。
 
-以上はB-07のHuman Reviewに提出する**仕様案**であり、OQ-03の結論や採用済みDecisionとして扱わない。OQ-03の判断、割当記録の具体形式、Actor交代時の同等性の判定、利用可能なAgent・Model、交換の実現性は別途人間のReviewと必要な検証を要する。
+B-07のHuman Reviewにより、四概念の関係、Actor分類、担当変更時の判断、Human Gateとの境界を採用した。割当記録の具体形式、Actor交代時の同等性の判定、利用可能なAgent・Model、交換の実現性は未決定または未検証であり、別途人間の判断と必要な検証を要する。

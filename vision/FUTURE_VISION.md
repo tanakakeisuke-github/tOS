@@ -8,7 +8,7 @@
 
 ## 協働と交換可能性
 
-Human / Cloud AI / Local AIの協働と、役割を特定の実行技術へ固定せずに割り当てられる設計を目指します。Role / Actor / Agent / Modelの関係と承認責任は[Actor Model](../specifications/ACTOR_MODEL.md)で扱います（B-07仕様案、Human Review待ち）。
+Human / Cloud AI / Local AIの協働と、役割を特定の実行技術へ固定せずに割り当てられる設計を目指します。Role / Actor / Agent / Modelの関係と承認責任は[Actor Model](../specifications/ACTOR_MODEL.md)で扱います（B-07で承認済み）。
 
 Runtime / Orchestrator / Vendorも交換可能な選択肢として扱います。新しい技術を導入する際、責務と接続条件を保ちながら該当部分を交換でき、OS全体の再設計を必須にしない方向です。具体的なAPIや実行環境は未決定です。
 
@@ -26,4 +26,4 @@ AIにより再構築コストが下がるという見通しのもと、Implement
 
 ## 次の具体化
 
-Purposeは[B-01の仕様](../specifications/PURPOSE.md)、Core境界は[Core Architecture](../specifications/CORE_ARCHITECTURE.md)で扱っています。Actorの関係はB-07仕様案、交換・再構築の評価はB-10の提案です。依存順と未決定事項は[Issue Map](../bootstrap/ISSUE_MAP.md)に集約しています。
+Purposeは[B-01の仕様](../specifications/PURPOSE.md)、Core境界は[Core Architecture](../specifications/CORE_ARCHITECTURE.md)、Actorの関係は[Actor Model](../specifications/ACTOR_MODEL.md)で扱っています。交換・再構築の評価はB-10の提案です。依存順と未決定事項は[Issue Map](../bootstrap/ISSUE_MAP.md)に集約しています。
