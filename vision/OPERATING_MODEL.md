@@ -1,6 +1,6 @@
 # tOS — Operating Model
 
-状態：依頼で指定された運用思想の保存。仕事のモデルはB-05で承認済み、入口ProtocolはB-08のHuman Review待ち。
+状態：依頼で指定された運用思想の保存。仕事のモデルはB-05、入口ProtocolはB-08で承認済み。
 
 ## 仕事と会話の寿命
 
@@ -8,7 +8,7 @@
 
 ## TriageとHuman Gate
 
-検討中の案を人間が判断できる仕事へ整え、着手と完了の前に人間の判断を置く設計意図です。Triage、Ready・Done前のHuman Gateと記録の扱いは[Work Model](../specifications/WORK_MODEL.md#triage状態human-gate)を参照してください。検討からReady前判断への手順は[Discussion](../protocols/DISCUSSION.md)・[Task](../protocols/TASK.md)・[Triage](../protocols/TRIAGE.md)に整理しました（B-08案、Human Review待ち）。
+検討中の案を人間が判断できる仕事へ整え、着手と完了の前に人間の判断を置く設計意図です。Triage、Ready・Done前のHuman Gateと記録の扱いは[Work Model](../specifications/WORK_MODEL.md#triage状態human-gate)を参照してください。検討からReady前判断への手順は[Discussion](../protocols/DISCUSSION.md)・[Task](../protocols/TASK.md)・[Triage](../protocols/TRIAGE.md)に整理しました（B-08で承認済み）。
 
 ## STOP / SPLIT / PROPOSE
 

@@ -1,6 +1,6 @@
 # Triage Protocol — Task案の行き先を決める
 
-状態：B-08提案。Human Review・Done承認前。Triageの位置と状態遷移は[Work Model](../specifications/WORK_MODEL.md#triage状態human-gate)を参照する。
+状態：B-08としてHuman Review承認済み（[PR #18](https://github.com/tanakakeisuke-github/tOS/pull/18)）。Triageの位置と状態遷移は[Work Model](../specifications/WORK_MODEL.md#triage状態human-gate)を参照する。
 
 ## 入力
 
