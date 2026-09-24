@@ -1,12 +1,10 @@
 # tOS — Future Vision
 
-状態：依頼で指定された設計思想・将来構想の保存。記述はHuman Review待ち。
+状態：依頼で指定された設計思想・将来構想の保存はHuman Review承認済み。B-01によるPurposeへの参照整理はHuman Review待ち。将来構想の実装・検証を承認したものではありません。
 
 ## 目指すもの
 
-tOSは、人間・Cloud AI・Local AIが協働し、Game / Film / Music / Publishing / App等へ展開できるAI-native制作OSを目指します。長期に残る知識と、短命なAI Sessionを結び、制作を継続できる基盤にします。
-
-制作の媒体や作品が変わっても、目的、意思決定、仕事の受け渡し、検証結果を復元できることが重要です。正式名称は **tOS** です。
+正式名称は **tOS** です。目的・対象媒体・保持する価値は[Purpose](../specifications/PURPOSE.md)へ整理しました（B-01仕様案、Human Review待ち）。ここでは、その目的から広がる将来の構成と設計方向を保存します。以下は実装済み機能や確定したv0.1の必須範囲を意味しません。
 
 ## 協働と交換可能性
 
@@ -33,8 +31,8 @@ Runtime / Orchestrator / Vendorも交換可能な選択肢として扱います�
 
 AIにより再構築コストが下がるという見通しのもと、Implementationは作り直せるものとして考えます。コスト低下の程度や、再構築の優位性は実際の測定が必要です。
 
-Principles / Requirements / Decisions / Learnings / Failures / Benchmarks / Project Historyは、実装を交換するときも残します。何を守り、何を試し、なぜ採用・撤回したかが、次の実装の判断材料になります。保持形式・版管理・移行時の同等性確認は後続Issueで設計します。
+保持する知識と後続設計事項は[Purposeの「実装を越えて保持する価値」](../specifications/PURPOSE.md#実装を越えて保持する価値)を参照します。
 
 ## 次の具体化
 
-PurposeとCore境界はB-01/B-03、Actorの関係はB-07、交換・再構築の評価はB-10で扱う提案です。依存順と未決定事項は[Issue Map](../bootstrap/ISSUE_MAP.md)に集約しています。
+Purposeは[B-01の仕様案](../specifications/PURPOSE.md)で扱っています。Core境界はB-03、Actorの関係はB-07、交換・再構築の評価はB-10で扱う提案です。依存順と未決定事項は[Issue Map](../bootstrap/ISSUE_MAP.md)に集約しています。
