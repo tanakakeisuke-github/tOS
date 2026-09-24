@@ -33,11 +33,7 @@ AIの自己確認はこれらのGateを置き換えません。Gateの記録形�
 
 **Chat is disposable. Knowledge is permanent.**
 
-Knowledgeの優先度は **Specification → Decision → Outcome → Transcript**。承認状態と適用版を確認して使うための順序です。上位文書と新しいDecisionが食い違う場合の調停方法は、B-04の設計対象です。
-
-Transcriptは経緯調査の資料として保存できますが、Fresh Workerに必要な入力はTaskに関係するKnowledgeから選びます。会話全文を無条件に再投入せず、未決定事項はOpen Questionのまま引き継ぎます。
-
-GitHubをKnowledgeのSource of Truthとする方針です。Human ViewとAI Onboarding Knowledgeの分離は[FindingsのF-03](../bootstrap/FINDINGS.md#f-03--human-viewとai-onboarding)に記録した仮説として検証します。
+GitHubをKnowledgeのSource of Truthとする設計意図です。Knowledgeの分類・優先度、版と承認状態、Task別の読み順、TranscriptとOpen Questionの扱いは[Knowledge Architecture](../specifications/KNOWLEDGE_ARCHITECTURE.md)に整理しました（B-04仕様案、Human Review待ち）。Human ViewとAI Onboarding Knowledgeの分離は[FindingsのF-03](../bootstrap/FINDINGS.md#f-03--human-viewとai-onboarding)に記録した仮説として検証します。
 
 ## 将来のContext Compiler
 
