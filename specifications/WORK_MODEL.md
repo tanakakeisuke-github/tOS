@@ -12,7 +12,7 @@
 | **Task** | 一つの小さな目的、範囲、入力、受入条件、依存、停止点を持つ実行単位。Discussionから提案できるが、TriageとReady前Human Gateを経て初めて着手できる。 |
 | **Issue** | Taskの条件、状態、根拠、承認への参照を引き継ぐ記録単位。原則として一つの実行Issueを一人のFresh Workerが担当する。Issueの作成自体はTaskのReady承認ではない。 |
 
-**1 Task = 1 small objective**。Fresh Workerが指定入力を一度のSessionで理解し、成果を作り、受入条件に照らして自己確認できる認知負荷を目安にする。ファイル数や所要時間だけでは決めない。目的が複数ある、入力・検証・承認の境界が異なる、または一度に把握できない場合は、依存関係と各成果を明示してTriageで分割する。Sessionは短命でも、Issueと成果・判断記録から仕事を再開できるようにする。WorkerとReviewerの分離とSessionの再開はB-06以降、制作全体の流れは[Creation Lifecycle](../vision/CREATION_LIFECYCLE.md)で扱う。
+**1 Task = 1 small objective**。Fresh Workerが指定入力を一度のSessionで理解し、成果を作り、受入条件に照らして自己確認できる認知負荷を目安にする。ファイル数や所要時間だけでは決めない。目的が複数ある、入力・検証・承認の境界が異なる、または一度に把握できない場合は、依存関係と各成果を明示してTriageで分割する。Sessionは短命でも、Issueと成果・判断記録から仕事を再開できるようにする。WorkerとReviewerの分離とSessionの再開は[Session Model](SESSION_MODEL.md)、制作全体の流れは[Creation Lifecycle](../vision/CREATION_LIFECYCLE.md)で扱う。
 
 ## Triage、状態、Human Gate
 
