@@ -23,7 +23,7 @@ tOS v0.1全体の範囲・完成条件は未確定（OQ-01）です。完成・�
 | 短いAI作業の開始・引き継ぎ・Reviewをどう進めるか | [Fresh Context](protocols/FRESH_CONTEXT.md)・[Handoff](protocols/HANDOFF.md)・[Review](protocols/REVIEW.md) — B-09で承認済み |
 | 新技術をどう評価し、版を固定・移行・撤回するか | [Technology Evolution](specifications/TECHNOLOGY_EVOLUTION.md)・[Technology Radar](research/TECHNOLOGY_RADAR.md) — B-10で承認済み |
 | 文書を横断して何を確認し、Fresh Workerをどう試すか | [Integration Review](bootstrap/INTEGRATION_REVIEW.md)・[Acceptance Plan](bootstrap/ACCEPTANCE_PLAN.md) — B-11で承認済み |
-| Fresh WorkerがKnowledgeを引き継げたか | [Bootstrap Acceptance](outcomes/BOOTSTRAP_ACCEPTANCE.md) — B-12は不合格、Human Review待ち |
+| Fresh WorkerがKnowledgeを引き継げたか | [Bootstrap Acceptance](outcomes/BOOTSTRAP_ACCEPTANCE.md) — B-12は初回・[R3再試行](outcomes/B12_RETRY_R3.md)とも受入条件未達、Human Review待ち |
 | 将来どこへ向かうのか | [Future Vision](vision/FUTURE_VISION.md) |
 | 設計から制作・完成・学習までどう流れるのか | [Creation Lifecycle](vision/CREATION_LIFECYCLE.md) |
 | 人間とAIはどう仕事を進めるのか | [Operating Model](vision/OPERATING_MODEL.md) |

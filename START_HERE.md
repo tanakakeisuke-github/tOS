@@ -1,6 +1,6 @@
 # tOS — Start Here
 
-状態：B-11まで承認済み。B-12のFresh Worker受入試験は不合格で、結果はHuman Review待ち。
+状態：B-11まで承認済み。B-12のFresh Worker受入試験は初回・[R3再試行](outcomes/B12_RETRY_R3.md)とも受入条件未達で、結果はHuman Review待ち。
 
 1. [Purpose](specifications/PURPOSE.md)で目的・現在の範囲・未決定事項を確認します。
 2. [Constitution](CONSTITUTION.md)で判断原則とHuman Gateを確認します。B-02の原則は承認済みです。
