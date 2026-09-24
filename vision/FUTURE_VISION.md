@@ -1,10 +1,10 @@
 # tOS — Future Vision
 
-状態：依頼で指定された設計思想・将来構想の保存はHuman Review承認済み。B-01によるPurposeへの参照整理はHuman Review待ち。将来構想の実装・検証を承認したものではありません。
+状態：設計思想・将来構想の保存とB-01によるPurposeへの参照整理はHuman Review承認済み。将来構想の実装・検証を承認したものではありません。
 
 ## 目指すもの
 
-正式名称は **tOS** です。目的・対象媒体・保持する価値は[Purpose](../specifications/PURPOSE.md)へ整理しました（B-01仕様案、Human Review待ち）。ここでは、その目的から広がる将来の構成と設計方向を保存します。以下は実装済み機能や確定したv0.1の必須範囲を意味しません。
+正式名称は **tOS** です。目的・対象媒体・保持する価値は[Purpose](../specifications/PURPOSE.md)へ整理しました（B-01で承認済み）。ここでは、その目的から広がる将来の構成と設計方向を保存します。以下は実装済み機能や確定したv0.1の必須範囲を意味しません。
 
 ## 協働と交換可能性
 
@@ -35,4 +35,4 @@ AIにより再構築コストが下がるという見通しのもと、Implement
 
 ## 次の具体化
 
-Purposeは[B-01の仕様案](../specifications/PURPOSE.md)で扱っています。Core境界はB-03、Actorの関係はB-07、交換・再構築の評価はB-10で扱う提案です。依存順と未決定事項は[Issue Map](../bootstrap/ISSUE_MAP.md)に集約しています。
+Purposeは[B-01の仕様](../specifications/PURPOSE.md)で扱っています。Core境界はB-03、Actorの関係はB-07、交換・再構築の評価はB-10で扱う提案です。依存順と未決定事項は[Issue Map](../bootstrap/ISSUE_MAP.md)に集約しています。

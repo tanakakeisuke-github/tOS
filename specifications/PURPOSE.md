@@ -1,6 +1,6 @@
 # tOS — Purpose
 
-状態：B-01の仕様案。着手承認済み、成果物はHuman Review待ち。保存済みKnowledgeの承認は、仮説の実証や本仕様案の承認を意味しません。
+状態：B-01としてHuman Review承認済み（[PR #4](https://github.com/tanakakeisuke-github/tOS/pull/4)）。仮説の実証やtOS v0.1全体の完成を意味しません。
 
 ## 何のためにあるか
 
@@ -31,14 +31,14 @@ AIによる再構築コスト低下は見通しであり、実測済みの効果
 ## 現在の範囲と未決定事項
 
 - **保存済みの土台**：KnowledgeとBootstrap Knowledge v0.1 Issue MapのHuman Reviewは承認済みです。これは設計意図と分解案の保存に対する承認です。
-- **現在のB-01**：PurposeとFresh Workerの入口を作り、READMEの案内を整理します。本成果物のDone承認は未実施です。
+- **B-01**：PurposeとFresh Workerの入口は承認・反映済みです。現在の着手範囲は[Issue Map](../bootstrap/ISSUE_MAP.md)から担当Issueを確認します。
 - **BootstrapとtOS v0.1全体**：Bootstrap Knowledgeの受入と、tOS v0.1全体の完成・Version Freezeは別の判断です。v0.1全体の範囲・完成条件は未確定（OQ-01）です。この文書で確定させません。
-- **今回の範囲外**：B-02以降の仕様化、OS本体の実装、Automation、GitHub Project設定、Studio Templateや作品の制作を開始する承認は含みません。
+- **後続の承認**：各Issueの着手とDoneは個別に判断します。Purposeの承認からOS本体の実装、Automation、GitHub Project設定、Studio Templateや作品制作の着手を推定しません。
 
 全体の長期的な流れは[Creation Lifecycle](../vision/CREATION_LIFECYCLE.md)、将来の構成は[Future Vision](../vision/FUTURE_VISION.md)、作業候補と未決定事項は[Issue Map](../bootstrap/ISSUE_MAP.md)にあります。これらの存在を、全読や後続作業の開始条件とはしません。
 
 ## 入力と承認
 
-本案は[B-01 / Issue #3](https://github.com/tanakakeisuke-github/tOS/issues/3)と、そこで指定された基準commit `99c869f974b23ccf56197402a74f0063a9c7a5a4` のREADME、Future Vision、Creation Lifecycleだけから再構成しました。旧会話・旧PRの全文・Historyは入力に含めていません。
+本仕様は[B-01 / Issue #3](https://github.com/tanakakeisuke-github/tOS/issues/3)と、そこで指定された基準commit `99c869f974b23ccf56197402a74f0063a9c7a5a4` のREADME、Future Vision、Creation Lifecycleだけから再構成しました。旧会話・旧PRの全文・Historyは入力に含めていません。
 
-人間がPurposeの再構成と入口の分かりやすさを確認し、Doneを判断します。それまではDraft PRで停止します。新しい担当者の読み始めと停止条件は[START_HERE](../START_HERE.md)を参照してください。
+Purposeと入口のHuman Reviewは[PR #4](https://github.com/tanakakeisuke-github/tOS/pull/4)で完了しました。新しい担当者の読み始めと停止条件は[START_HERE](../START_HERE.md)を参照してください。
