@@ -1,6 +1,6 @@
 # Technology Radar — 記録構造
 
-状態：B-10 / Issue #21 の提案。Human Review・Done承認前。この文書は候補を記録するための空の様式であり、Technology / Vendorの調査、性能評価、利用可能性確認、採用、実導入を示さない。
+状態：B-10の記録様式としてHuman Review承認済み（[PR #22](https://github.com/tanakakeisuke-github/tOS/pull/22)）。この文書は候補を記録するための空の様式であり、Technology / Vendorの調査、性能評価、利用可能性確認、採用、実導入を示さない。
 
 [Technology Evolution](../specifications/TECHNOLOGY_EVOLUTION.md)の判断に必要な候補・根拠・履歴を記録する。Radar状態（WATCH / TRIAL / ADOPT / HOLD）と変更区分（Current / Next / Lab）は独立している。Radarに候補が載ること、TRIALやADOPTになることだけで、承認済みCurrent版やProjectの選択版は変わらない。改善案の入口は[Triage](../protocols/TRIAGE.md)、証拠の照合は[Review](../protocols/REVIEW.md)、判断の正本・承認状態は[Knowledge Architecture](../specifications/KNOWLEDGE_ARCHITECTURE.md)に従う。
 
