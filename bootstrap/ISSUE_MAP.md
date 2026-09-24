@@ -1,8 +1,8 @@
 # tOS — Bootstrap Knowledge v0.1 Issue Map
 
-**状態：分解案はPR #2で承認済み。B-01〜B-11は完了。B-12は試験実施済み・不合格でHuman Review待ち。**
+**状態：分解案はPR #2で承認済み。B-01〜B-11は完了。B-12は未完了。旧試験は受入条件未達、改訂後は環境成立確認中・未受験。**
 
-[PR #2](https://github.com/tanakakeisuke-github/tOS/pull/2)は2026-09-24にmainへ反映されました。B-01〜B-11はそれぞれHuman Review承認後にmainへ反映され、担当Issueも完了しました。B-11の記録は[Issue #23](https://github.com/tanakakeisuke-github/tOS/issues/23)と[PR #24](https://github.com/tanakakeisuke-github/tOS/pull/24)です。B-12は[Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)として着手し、[試験結果](../outcomes/BOOTSTRAP_ACCEPTANCE.md)は事前基準で不合格です。B-12のDoneは未承認で、Issue #25は完了扱いにしません。各候補の実行範囲・承認・進捗は担当Issueを参照します。
+[PR #2](https://github.com/tanakakeisuke-github/tOS/pull/2)は2026-09-24にmainへ反映されました。B-01〜B-11はそれぞれHuman Review承認後にmainへ反映され、担当Issueも完了しました。B-11の記録は[Issue #23](https://github.com/tanakakeisuke-github/tOS/issues/23)と[PR #24](https://github.com/tanakakeisuke-github/tOS/pull/24)です。B-12は[Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)として着手し、[試験結果](../outcomes/BOOTSTRAP_ACCEPTANCE.md)は事前基準で不合格です。PR #28の試験契約修正は承認・main反映済みです。改訂後は環境未成立のため未受験であり、人間の確認だけを待つ状態ではありません。次の作業は[引き継ぎ](NEXT_SESSION.md)、証拠は[環境確認記録](../outcomes/B12_ENVIRONMENT_CHECK.md)を参照します。B-12のDoneは未承認で、Issue #25は完了扱いにしません。各候補の実行範囲・承認・進捗は担当Issueを参照します。
 
 これはBootstrap Knowledgeを作るための作業分解案です。下記の成果物パスと検証手順も提案であり、現在存在するファイルと将来の成果物を区別します。初回の保存作業はこのMapまでとし、PR #2の承認後、個別に承認されたB-01へ進みました。
 
@@ -191,7 +191,7 @@
 | OQ-06 | Freeze条件、Currentの例外変更、Projectの版移行・Rollback | B-10で判断条件を承認済み。対象Projectの具体的な移行・Rollback可否は個別判断 |
 | OQ-07 | Project Bootstrapの入力・生成物・承認・自動化範囲 | B-03で境界を整理 / 機能の計画前。後続へ保留可能 |
 | OQ-08 | Context CompilerとHuman Viewの実装時期・評価方法 | B-04・B-06で構想境界を整理 / 実装計画前。後続へ保留可能 |
-| OQ-09 | Fresh Worker試験の設問・採点者・合否基準・再試験条件はB-11で承認済み。B-12で正確なModel IDと閲覧経路を検証できなかった | B-12の不合格結果をHuman Reviewし、記録・隔離方法を決めてから再試験 |
+| OQ-09 | Fresh Worker試験契約はPR #28で改訂承認済み。追加検証でランタイムのModel応答を取得したが、全取得経路の隔離・監査は未成立 | 環境成立後、改訂後の入力版・条件・Readyを固定して再試験 |
 | OQ-10 | 分解案はPR #2のHuman Reviewで承認済み。個別候補は着手時に粒度を確認する | B-01〜B-11完了。B-12はIssue #25として着手したが、受入不合格・Done未承認 |
 | OQ-11 | PR #2を採用しmainへ反映済み。旧Draft PR #1を閉じるかは未決定 | B-01はPR #2の成果を入力とする。旧案は変更せず保持 |
 
