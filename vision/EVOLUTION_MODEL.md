@@ -1,6 +1,6 @@
 # tOS — Evolution Model
 
-状態：依頼で指定された進化方針と将来構想の保存。運用上の判断条件はB-10の仕様案でHuman Review待ち。
+状態：依頼で指定された進化方針と将来構想の保存。運用上の判断条件はB-10でHuman Review承認済み。
 
 ## 基本姿勢
 
@@ -10,11 +10,11 @@
 
 ## Technology Radarと版の区分
 
-Technology Radarの状態 **WATCH / TRIAL / ADOPT / HOLD** と、変更を扱う区分 **Current / Next / Lab** を分ける設計意図です。運用上の意味と適用の条件は[Technology Evolution](../specifications/TECHNOLOGY_EVOLUTION.md#二つの独立した軸)で扱います（B-10仕様案、Human Review待ち）。候補の記録構造は[Technology Radar](../research/TECHNOLOGY_RADAR.md)に置きます（同じくB-10案）。現時点のtOS Current版やFreeze日は未設定です。
+Technology Radarの状態 **WATCH / TRIAL / ADOPT / HOLD** と、変更を扱う区分 **Current / Next / Lab** を分ける設計意図です。運用上の意味と適用の条件は[Technology Evolution](../specifications/TECHNOLOGY_EVOLUTION.md#二つの独立した軸)で扱います（B-10で承認済み）。候補の記録構造は[Technology Radar](../research/TECHNOLOGY_RADAR.md)に置きます（同じくB-10で承認済み）。現時点のtOS Current版やFreeze日は未設定です。
 
 ## 評価から採用へ
 
-`Discover → Triage → Evaluate → Benchmark/PoC → Human Approval → Next Version → Measure → Keep/Rollback` の循環を目指します。各段階で必要な証拠と人間の判断は[Technology Evolution](../specifications/TECHNOLOGY_EVOLUTION.md#探索から継続撤回まで)で扱います（B-10仕様案、Human Review待ち）。
+`Discover → Triage → Evaluate → Benchmark/PoC → Human Approval → Next Version → Measure → Keep/Rollback` の循環を目指します。各段階で必要な証拠と人間の判断は[Technology Evolution](../specifications/TECHNOLOGY_EVOLUTION.md#探索から継続撤回まで)で扱います（B-10で承認済み）。
 
 ## Technology候補の履歴
 
@@ -24,6 +24,6 @@ Local AIはActorの分類としても扱います。個別のLocal AIのModel・
 
 ## Version FreezeとRebuild
 
-Version Freezeは、制作を開始できると人間が判断した範囲・版・既知の制限を固定し、Projectで使う基準を安定させる考え方です。Freeze、Currentの例外、Project移行・Rollbackの判断条件は[Technology Evolution](../specifications/TECHNOLOGY_EVOLUTION.md#freezeと変更の境界)に具体化しました（B-10仕様案、Human Review待ち）。
+Version Freezeは、制作を開始できると人間が判断した範囲・版・既知の制限を固定し、Projectで使う基準を安定させる考え方です。Freeze、Currentの例外、Project移行・Rollbackの判断条件は[Technology Evolution](../specifications/TECHNOLOGY_EVOLUTION.md#freezeと変更の境界)に具体化しました（B-10で承認済み）。
 
-Implementationの再構築も選択肢に含めます。[Future Vision](FUTURE_VISION.md)に記録した保持対象を引き継ぐ設計意図です。比較・移行・Human Approvalの判断条件は[Technology Evolution](../specifications/TECHNOLOGY_EVOLUTION.md#implementationを再構築する場合)で扱います（B-10仕様案、Human Review待ち）。
+Implementationの再構築も選択肢に含めます。[Future Vision](FUTURE_VISION.md)に記録した保持対象を引き継ぐ設計意図です。比較・移行・Human Approvalの判断条件は[Technology Evolution](../specifications/TECHNOLOGY_EVOLUTION.md#implementationを再構築する場合)で扱います（B-10で承認済み）。

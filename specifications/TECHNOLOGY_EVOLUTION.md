@@ -1,8 +1,8 @@
 # tOS — Technology Evolution, Freeze and Rebuild Policy
 
-状態：B-10 / Issue #21 の提案。Human Review・Done承認前。技術の調査、Benchmark / PoC、導入、Project移行、運用検証は本書の作成によって実施済みにならない。tOS v0.1全体の完成条件やFreezeを定める文書でもない。
+状態：B-10としてHuman Review承認済み（[PR #22](https://github.com/tanakakeisuke-github/tOS/pull/22)）。技術の調査、Benchmark / PoC、導入、Project移行、運用検証は本書の作成によって実施済みにならない。tOS v0.1全体の完成条件やFreezeを定める文書でもない。
 
-本書は[Constitution](../CONSTITUTION.md)のHuman Gateの下で、[Evolution Model](../vision/EVOLUTION_MODEL.md)を判断手順へ具体化する案である。候補の記録欄は[Technology Radar](../research/TECHNOLOGY_RADAR.md)を使う。仕事の入口は[Triage](../protocols/TRIAGE.md)、成果と証拠の照合は[Review](../protocols/REVIEW.md)、判断・理由・失敗の正本は[Knowledge Architecture](KNOWLEDGE_ARCHITECTURE.md)に従う。Runtime / Orchestrator / Vendorの交換時に守る境界は[Core Architecture](CORE_ARCHITECTURE.md#実行技術との交換点)を参照し、ここで重複定義しない。
+本書は[Constitution](../CONSTITUTION.md)のHuman Gateの下で、[Evolution Model](../vision/EVOLUTION_MODEL.md)を判断手順へ具体化したものである。候補の記録欄は[Technology Radar](../research/TECHNOLOGY_RADAR.md)を使う。仕事の入口は[Triage](../protocols/TRIAGE.md)、成果と証拠の照合は[Review](../protocols/REVIEW.md)、判断・理由・失敗の正本は[Knowledge Architecture](KNOWLEDGE_ARCHITECTURE.md)に従う。Runtime / Orchestrator / Vendorの交換時に守る境界は[Core Architecture](CORE_ARCHITECTURE.md#実行技術との交換点)を参照し、ここで重複定義しない。
 
 ## 二つの独立した軸
 
@@ -40,7 +40,7 @@
 | Measure | 実際に承認された範囲で導入した後、事前の基準に対する効果・副作用・失敗・運用負担を記録 | 未導入なら測定済みとしない。結果不足や許容外の影響は拡大を止める |
 | Keep / Rollback | 継続または撤回の人間判断、理由、適用範囲、版、実行・確認結果、残る影響を記録 | Keepは対象範囲だけ。Rollbackは復元と再検証を確認するまで完了扱いしない |
 
-評価値や閾値は候補・用途・Projectごとに事前に決める。全技術に共通の数値をこの提案で捏造しない。結果は成功例だけでなく失敗と未確認事項も、出所・適用版・承認状態付きで正本へ戻す。
+評価値や閾値は候補・用途・Projectごとに事前に決める。全技術に共通の数値を本書では設定しない。結果は成功例だけでなく失敗と未確認事項も、出所・適用版・承認状態付きで正本へ戻す。
 
 ## Freezeと変更の境界
 
