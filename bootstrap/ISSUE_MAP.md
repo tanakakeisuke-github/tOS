@@ -191,7 +191,7 @@ B-01〜B-11とPR #28・#30は承認・反映済み。B-12は[R5結果](../outcom
 | OQ-06 | Freeze条件、Currentの例外変更、Projectの版移行・Rollback | B-10で判断条件を承認済み。対象Projectの具体的な移行・Rollback可否は個別判断 |
 | OQ-07 | Project Bootstrapの入力・生成物・承認・自動化範囲 | B-03で境界を整理 / 機能の計画前。後続へ保留可能 |
 | OQ-08 | Context CompilerとHuman Viewの実装時期・評価方法 | B-04・B-06で構想境界を整理 / 実装計画前。後続へ保留可能 |
-| OQ-09 | Fresh Worker試験契約はPR #28で改訂承認済み。追加検証でランタイムのModel応答を取得したが、全取得経路の隔離・監査は未成立 | 環境成立後、改訂後の入力版・条件・Readyを固定して再試験 |
+| OQ-09 | 解決済み：PR #28・#30の改訂後、環境確認と実Readyを経てR5のP/M/Uを実施・独立採点し、全ケース合格を人間が受入承認した。B-12は完了 | [R5結果・監査の範囲と限界](../outcomes/b12-r5/README.md)、[Human Acceptance](../outcomes/b12-r5/HUMAN_ACCEPTANCE.md)。通常Runtimeの設定強制を信頼する範囲での受入であり、全内部動作の完全監査を意味しない。過去結果は原状保存 |
 | OQ-10 | 分解案はPR #2で承認済み。個別候補は着手時に粒度を確認する | B-01〜B-12受入承認済み。次のTaskは個別のReadyが必要 |
 | OQ-11 | PR #2を採用しmainへ反映済み。旧Draft PR #1を閉じるかは未決定 | B-01はPR #2の成果を入力とする。旧案は変更せず保持 |
 
