@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "human": "本会話のユーザー（tOS Human Owner）",
+  "approval_text": "R5を開始してください",
+  "approved_at": "2026-09-25T01:11:39Z (approval recorded; exact user message timestamp unavailable)",
+  "scope": "B-12 R5 case M: only explanation/diagnosis specified in CASE_TASK.md. No production, implementation, Freeze, Done or merge.",
+  "knowledge_commit": "ae7bafabc93526db4aa5e01744207ba1ba0cdf53",
+  "task_input_commit": "f1723489f057274943984641c8c98441594e6818",
+  "reason": "Human requested R5 execution against the merged counting contract.",
+  "manifest_sha256": "d5a4e75d3d7cf048dcc787e2d363b2e57482914aad4743e2a16bb491b410865c",
+  "approval_reference": "https://github.com/tanakakeisuke-github/tOS/issues/25#issuecomment-5825018657",
+  "dependencies": "B-11 and PR #28 adopted; PR #30 counting contract approved and merged. Older approval labels are historical. This Ready applies only to R5 explanation/diagnosis.",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium"
+}

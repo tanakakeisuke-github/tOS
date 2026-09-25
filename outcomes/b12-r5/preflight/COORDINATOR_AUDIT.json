@@ -1,0 +1,54 @@
+{
+  "manifest_sha256": "ca213e57d7b1536d7e539162e68fd1fd3a0bdea9b97f2c17994bea24fb5a3c3e",
+  "reader_requests_verified": [
+    {
+      "arguments": {
+        "document_id": "allowed.txt"
+      },
+      "success": true
+    },
+    {
+      "arguments": {
+        "document_id": "../blocked.txt"
+      },
+      "success": false
+    },
+    {
+      "arguments": {
+        "document_id": "/private/tmp/blocked.txt"
+      },
+      "success": false
+    },
+    {
+      "arguments": {
+        "document_id": "other-case/CASE_TASK.md"
+      },
+      "success": false
+    },
+    {
+      "arguments": {
+        "document_id": "grader/expected.md"
+      },
+      "success": false
+    },
+    {
+      "arguments": {
+        "document_id": "history/chat.txt"
+      },
+      "success": false
+    },
+    {
+      "arguments": {
+        "document_id": "https://example.invalid/blocked.txt"
+      },
+      "success": false
+    },
+    {
+      "arguments": {
+        "document_id": "allowed.txt",
+        "path": "../blocked.txt"
+      },
+      "success": false
+    }
+  ]
+}

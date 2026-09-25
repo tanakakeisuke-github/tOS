@@ -1,0 +1,101 @@
+{
+  "source_sha256": "56fe909d7de5a76f7789160d75d68f06775d04a1cd8646bcfb6a1053d55668f4",
+  "source_lines": 662,
+  "saved_records": 30,
+  "raw_types": {
+    "message": 5,
+    "custom_tool_call": 1,
+    "custom_tool_call_output": 1
+  },
+  "input_kinds": [
+    "collaboration_mode.instructions",
+    "environments.environment_context",
+    "permissions.instructions",
+    "unknown",
+    "user.text"
+  ],
+  "reader_calls": [
+    {
+      "threadId": "01a0d61e-777f-7a00-aac7-b3bff0d0a26d",
+      "turnId": "01a0d61e-77bd-7570-93f3-c9a5800e8291",
+      "callId": "exec-18ac653f-ed44-4dbd-ab9c-9715bc685f18",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "allowed.txt"
+      }
+    },
+    {
+      "threadId": "01a0d61e-777f-7a00-aac7-b3bff0d0a26d",
+      "turnId": "01a0d61e-77bd-7570-93f3-c9a5800e8291",
+      "callId": "exec-528cbe98-d5ec-4ad9-a225-ecfec52b7d48",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "../blocked.txt"
+      }
+    },
+    {
+      "threadId": "01a0d61e-777f-7a00-aac7-b3bff0d0a26d",
+      "turnId": "01a0d61e-77bd-7570-93f3-c9a5800e8291",
+      "callId": "exec-db200600-0028-44b0-a9cc-590327b14e5c",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "/private/tmp/blocked.txt"
+      }
+    },
+    {
+      "threadId": "01a0d61e-777f-7a00-aac7-b3bff0d0a26d",
+      "turnId": "01a0d61e-77bd-7570-93f3-c9a5800e8291",
+      "callId": "exec-ad3af1b4-742b-4b5c-97a9-6e4fbd724f21",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "other-case/CASE_TASK.md"
+      }
+    },
+    {
+      "threadId": "01a0d61e-777f-7a00-aac7-b3bff0d0a26d",
+      "turnId": "01a0d61e-77bd-7570-93f3-c9a5800e8291",
+      "callId": "exec-0637476b-fe4b-407a-90a8-3acf905cbb10",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "grader/expected.md"
+      }
+    },
+    {
+      "threadId": "01a0d61e-777f-7a00-aac7-b3bff0d0a26d",
+      "turnId": "01a0d61e-77bd-7570-93f3-c9a5800e8291",
+      "callId": "exec-551ee889-b8b1-4860-90db-60e288b50bf8",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "history/chat.txt"
+      }
+    },
+    {
+      "threadId": "01a0d61e-777f-7a00-aac7-b3bff0d0a26d",
+      "turnId": "01a0d61e-77bd-7570-93f3-c9a5800e8291",
+      "callId": "exec-bb45707a-a52f-4368-a511-330977496153",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "https://example.invalid/blocked.txt"
+      }
+    },
+    {
+      "threadId": "01a0d61e-777f-7a00-aac7-b3bff0d0a26d",
+      "turnId": "01a0d61e-77bd-7570-93f3-c9a5800e8291",
+      "callId": "exec-ba66ff5f-a099-4b44-902c-84a0eb97dbb0",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "allowed.txt",
+        "path": "../blocked.txt"
+      }
+    }
+  ],
+  "exclusions": "reasoning/account/deltas omitted; developer input kinds and hashes only"
+}

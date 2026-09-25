@@ -1,8 +1,10 @@
 # B-12 — 改訂後の環境成立確認
 
-状態：**明示設定と文書Reader移行を確認し、独立Reviewで限定付き採用可能。実Ready待ち。改訂後P/M/Uは未着手・未採点。** 対象は[Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)の開始前確認。承認済み改訂は[PR #28](https://github.com/tanakakeisuke-github/tOS/pull/28)、main `7ab8b092544f6f00b8ca8d791ed6473cfef6cd43`。修正Issue #27は完了している。以下の旧試行の未成立判定は履歴として維持する。
+状態：**環境は限定付き採用可能と確認し、R4・R5を実施済み。R5は全ケース合格候補でHuman Review待ち。** [最新R5の結果・環境再確認](b12-r5/README.md)を参照。以下は[Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)の開始前確認とその履歴。旧試行の未成立判定は変更しない。
 
 ## 最新の到達点
+
+R5ではPR #30反映済みmain `ae7bafabc93526db4aa5e01744207ba1ba0cdf53`を固定し、実行前の取得制限再確認を通過した。新しい実Ready後にP/M/Uを独立Sessionで実施し、実入力・要求/返却・設定を監査した。人間の受入判断は未実施。以降はR4以前の記録として読む。
 
 R4はその後、人間の実Readyを受けてP/M/Uを実施した。[R4結果](b12-r4/README.md)を参照。今回の実入力・操作記録にSkill案内の再注入や未知の取得経路は観察されず、環境要因の新たな未達は報告していない。Pの字数形式不適合は環境の不成立と区別する。
 

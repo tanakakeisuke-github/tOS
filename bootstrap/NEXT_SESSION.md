@@ -1,43 +1,38 @@
-# B-12 次Sessionへの引き継ぎ — R4結果のHuman Review待ち
+# B-12 次Sessionへの引き継ぎ — R5結果のHuman Review
 
 更新：2026-09-25 JST。調整担当向け。受験Workerへ配布しない。
 
 ## 正本と現在地
 
-正本は [tanakakeisuke-github/tOS](https://github.com/tanakakeisuke-github/tOS)。[Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)、[Draft PR #26](https://github.com/tanakakeisuke-github/tOS/pull/26)、branch `docs/b12-fresh-worker-acceptance` を使う。mainだけには最新の環境証拠がない。
+正本は [tanakakeisuke-github/tOS](https://github.com/tanakakeisuke-github/tOS)。[Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)、[Draft PR #26](https://github.com/tanakakeisuke-github/tOS/pull/26)、branch `docs/b12-fresh-worker-acceptance` を使う。mainだけには最新試験記録がない。
 
-B-01〜B-11とPR #28の修正は承認・反映済み。B-12は未完了。ユーザーの「ではb-12ををやりましょう」を受け環境確認を継続し、明示的な委譲無効化・Skillファイル単位の無効化、文書Readerへの移行を実測した。独立Reviewerは通常Runtimeの設定強制を信頼する範囲で採用可能と判断した。
+B-01〜B-11、PR #28、および字数契約を明確化した [PR #30](https://github.com/tanakakeisuke-github/tOS/pull/30) は人間の承認を経て反映済み。R4のPは形式不適合だったが、その原結果を改変・再採点していない。
 
-**R4は人間の「試験を開始してください。」を実Readyとして開始前にIssue #25へ記録し、P/M/Uを実施・独立採点済み。現在は結果のHuman Review待ち。** P内容12/12だが見出し・Markdownを含む説明ブロック702字で上限700字に不適合、M/U合格。全体合格候補にはしない。原回答を変更せず保存した。完全なRuntime内部監査や無条件の隔離証明を主張しない。
+ユーザーの「R5を開始してください」を新しい実Readyとして開始前に記録し、R5のP/M/Uを独立した新規Sessionで実施した。結果は [R5結果](../outcomes/b12-r5/README.md)、採点の正本は [独立Review](../outcomes/b12-r5/INDEPENDENT_REVIEW.md)。**B-12 DoneとPR #26 mergeは未承認。次は人間の受入判断で停止する。**
 
 ## 再開時の読む順番
 
-1. Issue #25・PR #26の最新headとコメントを確認。未保存変更があれば先に確認する。
-2. [R4結果](../outcomes/b12-r4/README.md) → [独立採点](../outcomes/b12-r4/INDEPENDENT_REVIEW.md)を読む。[準備時に固定したR4条件](../outcomes/b12-r4-preparation/README.md)は履歴として参照する。
-3. [今回の環境証拠](../outcomes/b12-environment/explicit-controls/README.md) → [独立Review](../outcomes/b12-environment/explicit-controls/REVIEW.md)。必要なコード・実記録だけ参照する。
-4. [Acceptance Plan](ACCEPTANCE_PLAN.md)、[Purpose](../specifications/PURPOSE.md)、[Constitution](../CONSTITUTION.md)を照合する。
+1. Issue #25・PR #26の最新headとコメントを確認。既に人間が承認していれば同じ承認を再度求めない。
+2. R5結果、独立Review、調整側監査、必要な原回答・操作記録を読む。
+3. [固定R5入力](../outcomes/b12-r5-preparation/README.md) と実Readyを照合する。
+4. 必要時に [環境確認と独立Review](../outcomes/b12-environment/explicit-controls/README.md)、[Acceptance Plan](ACCEPTANCE_PLAN.md)、[Purpose](../specifications/PURPOSE.md)、[Constitution](../CONSTITUTION.md) を参照する。
 
-Knowledge・設問・計画の基準は `7ab8b092544f6f00b8ca8d791ed6473cfef6cd43`。試験記録ブランチのheadとは別。固定版の古い状態ラベルは書換えず、READYにPR #28の実承認・B-11依存解消・今回の診断のみへの着手を具体化する。
+## 固定条件
 
-## 次の作業
+Knowledge・計画・設問の基準は `ae7bafabc93526db4aa5e01744207ba1ba0cdf53`、固定入力・runnerは `f1723489f057274943984641c8c98441594e6818`。試験記録ブランチのheadとは別。PR #30の承認済み文書を記録ブランチへ取り込んだ。固定Knowledge中の歴史的な承認待ち表示は変更せず、実Readyで採用版と今回の診断のみへの承認を明記した。
 
-**以下の旧開始手順はR4では実施済み。R4を再実行しない。** 次の判断は、人間が結果と字数境界を確認し、見出し・Markdownを含む計数の説明を明確化する契約修正を進めるかどうか。修正はReview・承認・適用版固定・新しい実Readyを経て別系列で再試験する。R4を遡及再採点しない。B-12 Done/mergeは未承認。
+R5はPの指定見出し間の原文からCR/LFだけを除いてUnicodeコードポイントを計数する契約。P/M/UすべてをR5で実施し、R4の合格と合算しない。受験者にはSTART_HERE・当該Task・実Readyを初期配布し、許可された必要資料だけをReaderで渡した。旧チャット、期待回答、採点計画、他ケースを渡していない。
 
-- ユーザーがR4の具体的条件へReady承認した場合だけ、承認者・実際の発言・時点・対象Task・範囲・版・理由・各manifest hashをIssue #25と各READY記録へ保存する。既に承認された場合は同じ承認を再度求めない。
-- 準備フォルダーのP/M/Uは独立入力。READYは未作成。共通runnerは記録形式/hashを検査するが、人間の承認の真偽を自動認定しない。担当者が実承認と照合する。
-- ケースごとの新規ephemeral Sessionで初期3文書だけを投入し、必要文書を固定ID Readerから取得させる。モデル・設定・自動入力・操作・原回答を保存。ケース間で回答を渡さない。
-- 受験者へ旧会話、本書、採点計画、期待回答、他ケース、環境報告を渡さない。
-- 未承認、設定差異、入力不整合、未知の取得経路・自動案内再注入・汚染は停止して記録する。回答が良くても逸脱を合格にしない。
-- 作成担当・受験Sessionから分離したFresh Reviewerが原回答・入力・操作記録・公開基準を照合し、結果をDraft PR #26へ保存。人間の受入判断で停止する。
+環境は通常Runtimeの明示設定・文書Reader制御を信頼する範囲で確認済み。全内部操作の完全監査・無条件の隔離を主張しない。未知の取得経路や入力汚染を新たに認めた場合は、良い回答でも試験有効性を再評価する。
 
-## 承認と履歴
+## 人間の停止点と履歴
 
-OpenAI Codex `gpt-6-astra`へ試験資料を送ることは [R3再開前記録](https://github.com/tanakakeisuke-github/tOS/issues/25#issuecomment-5818091607)の承認範囲内。同一範囲の送信承認を重ねて求めない。別送信先・課金経路へ一般化しない。
+独立採点はHuman Doneを代行しない。人間にR5結果をB-12の説明・診断試験として受け入れるかを具体的に確認する。mergeやIssue完了への承認範囲を区別する。未承認の再試験・原回答の修正・過去結果への遡及適用は行わない。
 
-初回/R3の未達、R2中断、旧環境の未成立は保存する。今回の判定で遡及再採点しない。旧履歴は [環境総括](../outcomes/B12_ENVIRONMENT_CHECK.md) と [前回監査](../outcomes/b12-environment/resume-audit/README.md) から辿れる。
+初回/R3の未達、R2中断、旧環境未成立、R4形式不適合は保存する。[結果入口](../outcomes/BOOTSTRAP_ACCEPTANCE.md)、[R4原結果](../outcomes/b12-r4/README.md)、[環境履歴](../outcomes/B12_ENVIRONMENT_CHECK.md)から辿れる。
 
-B-12の受入は、最初の知識・引き継ぎ方法の検証。tOSは実コンテンツ制作とフィードバックによってリデザインし続けるもので、この試験を全体の最終完成・Freezeと扱わない。個別TaskのReady/Doneは人間が判断する。
+tOSは実コンテンツ制作とフィードバックでリデザインし続ける。B-12の受入は現在の知識引き継ぎの検証であり、全体の最終完成・v0.1 Freeze・実制作開始を意味しない。
 
 ## ローカル補助
 
-作業cloneは `/private/tmp/tos-b07-20260925`。remote・branch・statusを確認して使用する。消失時はPR #26から復元可能。ChatGPT同期の `sources/` は読取専用。古い `/private/tmp/tos-b12-r4/` の入力は使わず、今回のR4準備フォルダーを正本とする。
+cloneは `/private/tmp/tos-b07-20260925`。使用前にremote・branch・statusを確認する。消失時はPR #26から復元可能。ChatGPT同期の `sources/` は読取専用。実行rawログは `/private/tmp/tos-b12-r5-execution`、事前確認は `/private/tmp/tos-b12-r5-preflight`。公開用の抜粋とhashはR5結果フォルダーに保存した。
