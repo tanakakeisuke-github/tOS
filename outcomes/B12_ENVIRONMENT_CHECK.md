@@ -1,6 +1,6 @@
 # B-12 — 改訂後の環境成立確認
 
-状態：**環境は限定付き採用可能と確認し、R4・R5を実施済み。R5は全ケース合格候補でHuman Review待ち。** [最新R5の結果・環境再確認](b12-r5/README.md)を参照。以下は[Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)の開始前確認とその履歴。旧試行の未成立判定は変更しない。
+状態：**環境は限定付き採用可能と確認し、R5全ケース合格を人間が受入承認済み。** [Human Acceptance](b12-r5/HUMAN_ACCEPTANCE.md)と[R5結果](b12-r5/README.md)を参照。以下は開始前確認と当時の履歴であり、過去判定は変更しない。
 
 ## 最新の到達点
 

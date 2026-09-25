@@ -1,6 +1,6 @@
 # B-12 R5 — 明確化した契約でのFresh Worker試験
 
-2026-09-25 JST。**P/M/Uを実施・独立採点済み。全3ケース合格、全体合格候補。Human DoneとPR mergeは未承認。** 判定の根拠は [INDEPENDENT_REVIEW.md](INDEPENDENT_REVIEW.md) を正本とする。
+2026-09-25 JST。**P/M/Uを実施・独立採点済み。全3ケース合格、人間が受入・B-12 Done・PR #26 merge・Issue #25 closeを承認済み。** [Human Acceptance](HUMAN_ACCEPTANCE.md)を参照。採点時点の判定は [INDEPENDENT_REVIEW.md](INDEPENDENT_REVIEW.md) に原状保存する。
 
 | ケース | 独立評価 | 判定 |
 |---|---|---|
@@ -35,4 +35,4 @@ Pの指定見出しは各1回・順序通りで、説明本文は原文からCR/
 
 ## 人間の停止点
 
-R4その他の過去結果は原状保存し、R5へ合算しない。R5結果の受入とB-12 Doneは人間が判断する。PR #26のmergeも別の承認対象。この試験の合格は説明・診断と知識引き継ぎの検証であり、tOS全体の完成、実制作、v0.1 Freezeの承認ではない。
+R4その他の過去結果は原状保存し、R5へ合算しない。人間はR5結果の受入・B-12 Done・PR #26 merge・Issue #25 closeを明示的に承認した。この受入は説明・診断と知識引き継ぎの検証であり、tOS全体の完成、実制作、v0.1 Freezeの承認ではない。
