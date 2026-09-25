@@ -1,0 +1,101 @@
+{
+  "source_sha256": "2a23e530edd7eb7663add71bfac0dfa4385cff62dd38260a5c89a0a3191ebdc7",
+  "source_lines": 1341,
+  "saved_records": 36,
+  "raw_types": {
+    "message": 5,
+    "custom_tool_call": 4,
+    "custom_tool_call_output": 4,
+    "reasoning": 2
+  },
+  "input_kinds": [
+    "collaboration_mode.instructions",
+    "environments.environment_context",
+    "permissions.instructions",
+    "unknown",
+    "user.text"
+  ],
+  "reader_calls": [
+    {
+      "threadId": "01a0d60a-9e11-72d3-ad58-c2fef1a62f73",
+      "turnId": "01a0d60a-9e46-7af2-8ee5-06ca2f615329",
+      "callId": "exec-6629f81d-f1da-490e-930e-407d7780ff46",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "specifications/PURPOSE.md"
+      }
+    },
+    {
+      "threadId": "01a0d60a-9e11-72d3-ad58-c2fef1a62f73",
+      "turnId": "01a0d60a-9e46-7af2-8ee5-06ca2f615329",
+      "callId": "exec-286b7d09-fc1f-41cb-81e5-5e861fba9be2",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "CONSTITUTION.md"
+      }
+    },
+    {
+      "threadId": "01a0d60a-9e11-72d3-ad58-c2fef1a62f73",
+      "turnId": "01a0d60a-9e46-7af2-8ee5-06ca2f615329",
+      "callId": "exec-fefa4229-7165-4974-951d-921544153f56",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "vision/CREATION_LIFECYCLE.md"
+      }
+    },
+    {
+      "threadId": "01a0d60a-9e11-72d3-ad58-c2fef1a62f73",
+      "turnId": "01a0d60a-9e46-7af2-8ee5-06ca2f615329",
+      "callId": "exec-c6688a3c-3c28-4cb1-b4b3-f7e6306cfd32",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "specifications/CORE_ARCHITECTURE.md"
+      }
+    },
+    {
+      "threadId": "01a0d60a-9e11-72d3-ad58-c2fef1a62f73",
+      "turnId": "01a0d60a-9e46-7af2-8ee5-06ca2f615329",
+      "callId": "exec-884928f4-8cc9-4464-93db-4304fbefa4d0",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "specifications/WORK_MODEL.md"
+      }
+    },
+    {
+      "threadId": "01a0d60a-9e11-72d3-ad58-c2fef1a62f73",
+      "turnId": "01a0d60a-9e46-7af2-8ee5-06ca2f615329",
+      "callId": "exec-7e2cfc78-bbf1-4404-be42-f1b409baa7bf",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "bootstrap/ISSUE_MAP.md"
+      }
+    },
+    {
+      "threadId": "01a0d60a-9e11-72d3-ad58-c2fef1a62f73",
+      "turnId": "01a0d60a-9e46-7af2-8ee5-06ca2f615329",
+      "callId": "exec-4730c8f9-6918-4faa-ab83-a94d2fa7d37a",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "specifications/KNOWLEDGE_ARCHITECTURE.md"
+      }
+    },
+    {
+      "threadId": "01a0d60a-9e11-72d3-ad58-c2fef1a62f73",
+      "turnId": "01a0d60a-9e46-7af2-8ee5-06ca2f615329",
+      "callId": "exec-70eec36c-2bca-4c08-bcd3-020b6c112ebc",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "specifications/SESSION_MODEL.md"
+      }
+    }
+  ],
+  "exclusions": "reasoning/account/deltas omitted; developer input kinds and hashes only"
+}

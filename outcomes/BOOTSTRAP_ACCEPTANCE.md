@@ -1,5 +1,9 @@
 # B-12 — Fresh Worker Acceptance Outcome
 
+## 最新系列 R4（2026-09-25）
+
+改訂後P/M/Uを実施し、[R4結果・実Ready・原回答・独立Review](b12-r4/README.md)を保存した。P内容12/12だが説明ブロック702字で700字上限不適合、M/U合格。全体合格候補にはせずHuman Review待ち。以下は初回試験の原結果で、R4の基準で変更・再採点していない。
+
 **状態：試験実施済み・受入不合格。Human Review / Done判断前。** [Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)の結果記録であり、Bootstrap Knowledgeの受入、tOS v0.1全体の完成、Version Freezeを意味しない。
 
 ## 固定条件と実施範囲

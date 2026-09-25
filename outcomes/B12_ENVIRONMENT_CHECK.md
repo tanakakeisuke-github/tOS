@@ -4,6 +4,8 @@
 
 ## 最新の到達点
 
+R4はその後、人間の実Readyを受けてP/M/Uを実施した。[R4結果](b12-r4/README.md)を参照。今回の実入力・操作記録にSkill案内の再注入や未知の取得経路は観察されず、環境要因の新たな未達は報告していない。Pの字数形式不適合は環境の不成立と区別する。
+
 [追加証拠・独立Review](b12-environment/explicit-controls/README.md)を保存。`agents.enabled=false` とSkillのSKILL.md単位無効化により実入力の案内が消失。Reader、Skill、JS直接取得経路を実測し、共通runnerのmanifest文書返却・拒否を検証した。通常Runtimeの設定強制を信頼する範囲で採用可能。全内部操作の完全監査の証明とはしない。具体的な [R4条件と入力](b12-r4-preparation/README.md)へのHuman Readyを求める段階に進んだ。受験はまだ開始していない。
 
 ## 確認したこと
