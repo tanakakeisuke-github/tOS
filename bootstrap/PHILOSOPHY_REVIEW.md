@@ -1,6 +1,6 @@
 # B-12 — 原則と試験契約の整合レビュー
 
-状態：修正提案・Human Review待ち。[Issue #27](https://github.com/tanakakeisuke-github/tOS/issues/27)が今回の範囲・判断記録の正本。基準mainは `5f15fd73800c23b04875ef73261367e0df7aa81c`。試験結果は[PR #26](https://github.com/tanakakeisuke-github/tOS/pull/26)に保存された当時の記録として扱う。
+状態：修正は[PR #28](https://github.com/tanakakeisuke-github/tOS/pull/28)でHuman Review承認・main反映済み。以下は修正時のReview記録。[Issue #27](https://github.com/tanakakeisuke-github/tOS/issues/27)が今回の範囲・判断記録の正本。基準mainは `5f15fd73800c23b04875ef73261367e0df7aa81c`。試験結果は[PR #26](https://github.com/tanakakeisuke-github/tOS/pull/26)に保存された当時の記録として扱う。
 
 ## 立ち戻る目的
 

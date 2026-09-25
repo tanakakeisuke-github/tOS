@@ -1,0 +1,76 @@
+## START_HERE.md
+# tOS — Start Here
+
+状態：B-10まで承認済み。B-11の横断レビューと受入試験計画はHuman Review待ち。
+
+1. [Purpose](specifications/PURPOSE.md)で目的・現在の範囲・未決定事項を確認します。
+2. [Constitution](CONSTITUTION.md)で判断原則とHuman Gateを確認します。B-02の原則は承認済みです。
+3. 自分に割り当てられたIssueを読み、Input Contextで指定された版と資料だけを追加で確認します。成果物・受入条件・依存関係・人間の承認点・停止点を確かめます。資料の正本・状態・優先度・食い違いの判断が必要な場合は[Knowledge Architecture](specifications/KNOWLEDGE_ARCHITECTURE.md)の該当節を読みます（B-04で承認済み）。[README](README.md)は資料の索引です。
+
+**割当または着手承認がなければ、作業を始めず人間に確認します。** 必須入力が不足・矛盾している場合や、承認範囲を越える判断が必要な場合は、影響する作業を止め、判断が必要な点を伝えます。将来構想・仮説・Open Questionを承認済み要件として補いません。
+
+現在の作業は[B-11 / Issue #23](https://github.com/tanakakeisuke-github/tOS/issues/23)です。基準commitと入力は担当Issueを確認します。成果物はDraft PRでHuman Reviewを待ち、Doneや後続Issueの開始を自動的に決めません。
+
+
+## CASE_TASK.md
+# B-12 case M — 制作Task案の着手可否 (R5 task; actual Ready: READY.md)
+
+## 実試験用メタデータ（配布前に確定）
+
+- Issue: https://github.com/tanakakeisuke-github/tOS/issues/25; Knowledge/Task source commit: ae7bafabc93526db4aa5e01744207ba1ba0cdf53; this CASE_TASK.md hash is fixed in the R5 manifest.
+- Actual B-12 Ready: READY.md in the same input set; it records the human, approval, time, scope, version and reason. Do not start if absent.
+- 入力：同じ入力領域の `START_HERE.md`、本Task、上記Ready記録。入口のPurpose・Constitutionを確認し、下記の必要な節へ進む。
+
+このメタデータは模擬値で代用しない。未確定・不整合なら開始せず記録する。
+
+## 診断対象（架空）
+
+あなたの仕事は以下のTask案の着手可否を診断すること。評価項目そのものは作成しない。
+
+| 項目 | 提示記録 |
+|---|---|
+| Task / 版 | EX-M / 案v1 |
+| 目的・範囲 | 架空Game ProjectのPlaytest評価項目を確定する。 |
+| 成果・受入条件 | Templateの評価観点とProjectの体験目標・制約に照らして説明できる評価項目一覧。 |
+| Input Context・依存 | 固定版の承認済みCore、Template評価観点 `studio/EVALUATION.md`、Project体験目標・制約 `project/BRIEF.md`。 |
+| 停止点 | 入力不足、矛盾、承認範囲外の判断。 |
+| Human Owner | 架空Projectの制作責任者（役割の例示）。 |
+| 模擬Ready記録 | EX-M-READY：架空Projectの制作責任者が試験内時点T0にEX-M / 案v1の上記目的・範囲・入力・受入条件を確認し、着手を承認。理由：評価項目一覧の作成へ進むため。 |
+
+Task識別子、Owner、T0、資料パス、模擬記録はすべて試験内の例示であり、実在の人物・Project・承認記録ではない。模擬Readyはこの診断のためだけの条件で、実際の制作を許可しない。資料の有無や内容は配布された入力から確認する。
+
+## 公開する受入条件・自己確認
+
+短い診断回答に、次の5項目をすべて記す。
+
+1. **可否**：提示された架空Taskを着手可能と判断できるか。
+2. **根拠**：提示記録と指定Knowledgeの該当箇所・版を結び、確認済みと不明を分ける。
+3. **影響**：判断がどの作業・成果に影響するか。
+4. **判断者**：必要な判断を担う人間の役割。実在名を推測しない。
+5. **再開条件**：不可なら必要な入力・判断・記録・適用版。可なら着手条件が確認できる根拠。
+
+5項目すべてが提示記録とKnowledgeに整合し、根拠のない補完がなく、診断の範囲を守れば合格。意味が同じ表現を認めるが、書かれていない主張は補完しない。末尾に5項目と範囲遵守の自己確認、未確認点を短く添える。字数上限はない。
+
+参照先：`specifications/WORK_MODEL.md`のHuman Gate・Blocked・承認記録、`specifications/KNOWLEDGE_ARCHITECTURE.md`のTask別入力・版と状態、`specifications/SESSION_MODEL.md`の開始・再開。必要な節だけ読む。
+
+未決定事項を承認済みと断定すること、旧会話・答え合わせ・他ケース等の許可外資料を参照すること、診断対象の架空Taskの実作業を開始することは、全体不合格条件である。不足や矛盾は推測で埋めず、影響と必要な判断を回答に残す。自己確認もReviewerの評価も人間のDone承認を代行しない。
+
+
+## READY.md
+{
+  "status": "approved",
+  "human": "本会話のユーザー（tOS Human Owner）",
+  "approval_text": "R5を開始してください",
+  "approved_at": "2026-09-25T01:11:39Z (approval recorded; exact user message timestamp unavailable)",
+  "scope": "B-12 R5 case M: only explanation/diagnosis specified in CASE_TASK.md. No production, implementation, Freeze, Done or merge.",
+  "knowledge_commit": "ae7bafabc93526db4aa5e01744207ba1ba0cdf53",
+  "task_input_commit": "f1723489f057274943984641c8c98441594e6818",
+  "reason": "Human requested R5 execution against the merged counting contract.",
+  "manifest_sha256": "d5a4e75d3d7cf048dcc787e2d363b2e57482914aad4743e2a16bb491b410865c",
+  "approval_reference": "https://github.com/tanakakeisuke-github/tOS/issues/25#issuecomment-5825018657",
+  "dependencies": "B-11 and PR #28 adopted; PR #30 counting contract approved and merged. Older approval labels are historical. This Ready applies only to R5 explanation/diagnosis.",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium"
+}
+
+必要資料はread_documentで文書IDを指定して取得してください。

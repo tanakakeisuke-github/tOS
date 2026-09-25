@@ -1,0 +1,70 @@
+{
+  "source_sha256": "c4340ae3afc22df3b2fd5bb6ed22d156e29e71c522c4df5e419cdeadda91188d",
+  "source_lines": 820,
+  "saved_records": 26,
+  "raw_types": {
+    "message": 5,
+    "custom_tool_call": 2,
+    "custom_tool_call_output": 2
+  },
+  "input_kinds": [
+    "collaboration_mode.instructions",
+    "environments.environment_context",
+    "permissions.instructions",
+    "unknown",
+    "user.text"
+  ],
+  "reader_calls": [
+    {
+      "threadId": "01a0d621-407c-7c50-ba40-22da6ac35bde",
+      "turnId": "01a0d621-40b3-7e73-8ae1-b2f8fcf1eafe",
+      "callId": "exec-08f0659d-f2db-4d17-b6fb-2227d0d91ecd",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "specifications/PURPOSE.md"
+      }
+    },
+    {
+      "threadId": "01a0d621-407c-7c50-ba40-22da6ac35bde",
+      "turnId": "01a0d621-40b3-7e73-8ae1-b2f8fcf1eafe",
+      "callId": "exec-2c699c0e-4cc4-4fe6-87e9-6b129fdc2a76",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "CONSTITUTION.md"
+      }
+    },
+    {
+      "threadId": "01a0d621-407c-7c50-ba40-22da6ac35bde",
+      "turnId": "01a0d621-40b3-7e73-8ae1-b2f8fcf1eafe",
+      "callId": "exec-b8089615-1ad7-4113-bc10-0709b7d62769",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "specifications/SESSION_MODEL.md"
+      }
+    },
+    {
+      "threadId": "01a0d621-407c-7c50-ba40-22da6ac35bde",
+      "turnId": "01a0d621-40b3-7e73-8ae1-b2f8fcf1eafe",
+      "callId": "exec-ed0a412d-92fa-4e37-a6d1-9020ecb1e5f4",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "specifications/WORK_MODEL.md"
+      }
+    },
+    {
+      "threadId": "01a0d621-407c-7c50-ba40-22da6ac35bde",
+      "turnId": "01a0d621-40b3-7e73-8ae1-b2f8fcf1eafe",
+      "callId": "exec-ff51b94c-1c70-49bd-a182-6e0896ae8693",
+      "namespace": null,
+      "tool": "read_document",
+      "arguments": {
+        "document_id": "specifications/KNOWLEDGE_ARCHITECTURE.md"
+      }
+    }
+  ],
+  "exclusions": "reasoning/account/deltas omitted; developer input kinds and hashes only"
+}

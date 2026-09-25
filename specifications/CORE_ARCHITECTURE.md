@@ -1,6 +1,6 @@
 # tOS — Core Architecture Boundaries
 
-状態：B-03としてHuman Review承認済み（[PR #8](https://github.com/tanakakeisuke-github/tOS/pull/8)）。実装済みの構成やtOS v0.1全体の確定範囲を示すものではない。具体化と依存の方向の表記は[Issue #27](https://github.com/tanakakeisuke-github/tOS/issues/27)による修正提案・Human Review待ち。
+状態：B-03としてHuman Review承認済み（[PR #8](https://github.com/tanakakeisuke-github/tOS/pull/8)）。実装済みの構成やtOS v0.1全体の確定範囲を示すものではない。具体化と依存の方向の表記修正は[PR #28](https://github.com/tanakakeisuke-github/tOS/pull/28)で承認・main反映済み。
 
 目的と保持する知識は[Purpose](PURPOSE.md)、判断原則とHuman Gateは[Constitution](../CONSTITUTION.md)を参照する。本書はそれらを繰り返さず、媒体をまたぐ境界と交換点を定める案である。
 

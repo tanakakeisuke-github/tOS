@@ -1,0 +1,34 @@
+{
+  "source_protocol_sha256": "70a3e2f23dd38e4867dde4e5f725520a3550533f19da35a00fa3e88013280060",
+  "source_line_count": 244,
+  "saved_events_count": 22,
+  "methods": {
+    "initialize": 1,
+    "response": 6,
+    "initialized": 1,
+    "thread/start": 1,
+    "remoteControl/status/changed": 1,
+    "turn/start": 1,
+    "thread/started": 1,
+    "warning": 1,
+    "thread/status/changed": 2,
+    "turn/started": 1,
+    "account/updated": 1,
+    "rawResponseItem/completed": 13,
+    "item/started": 6,
+    "item/completed": 6,
+    "item/agentMessage/delta": 186,
+    "rawResponse/completed": 4,
+    "item/tool/call": 3,
+    "thread/tokenUsage/updated": 4,
+    "account/rateLimits/updated": 4,
+    "turn/completed": 1
+  },
+  "raw_item_types": {
+    "message": 7,
+    "custom_tool_call": 3,
+    "custom_tool_call_output": 3
+  },
+  "full_protocol_local_only": "/private/tmp/tos-b12-resume-audit/protocol.jsonl",
+  "filter": "See README; no reasoning/account events copied"
+}

@@ -1,23 +1,23 @@
-# 次のSessionへの引き継ぎ — B-12契約修正
+# 次Sessionへの引き継ぎ — B-12受入承認済み
 
-状態：修正提案のHuman Review待ち。これは担当者向けの索引であり、受験者へ渡す入力ではない。
+2026-09-25 JST。調整担当向け。受験Workerへ配布しない。
 
-## 目的と現在地
+正本は [tanakakeisuke-github/tOS](https://github.com/tanakakeisuke-github/tOS)。B-01〜B-11、PR #28・#30は承認・反映済み。B-12はR5のP/M/U全ケース合格を人間が受け入れ、Done・PR #26のmerge・Issue #25のcloseを承認した。
 
-目的は、tOSの原則とB-12の仕事・試験の渡し方を整合させること。[Issue #27](https://github.com/tanakakeisuke-github/tOS/issues/27)が修正範囲・判断の正本。[Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)は受入試験、[PR #26](https://github.com/tanakakeisuke-github/tOS/pull/26)は過去の試行結果である。承認・merge状態は再開時にGitHubで確認する。
+## 確認する記録
 
-## 最初に読むもの
+1. [Human Acceptance](../outcomes/b12-r5/HUMAN_ACCEPTANCE.md)と[Issue #25の承認](https://github.com/tanakakeisuke-github/tOS/issues/25#issuecomment-5825080474)。同じ承認を再度求めない。
+2. [PR #26](https://github.com/tanakakeisuke-github/tOS/pull/26)とIssue #25の最新イベントで、merge・closeの実施状態を確認する。
+3. [R5結果](../outcomes/b12-r5/README.md)、[独立Review](../outcomes/b12-r5/INDEPENDENT_REVIEW.md)、必要な原回答・操作記録。
 
-1. Issue #27の最新状態、対応PRの対象commitとHuman Review記録。
-2. [Purpose](../specifications/PURPOSE.md)「何のためにあるか」、[Constitution](../CONSTITUTION.md)「変わりにくい原則」。
-3. [今回の整合レビュー](PHILOSOPHY_REVIEW.md)、[次版Acceptance Plan](ACCEPTANCE_PLAN.md)。担当範囲に必要なケース本文だけを参照する。
+R5のKnowledge・計画・設問は `ae7bafabc93526db4aa5e01744207ba1ba0cdf53`、固定入力・runnerは `f1723489f057274943984641c8c98441594e6818`。受入対象の結果headは `66c14f93a6d41f053e874f3d845aa17172c78cc9`。固定入力・原回答・独立採点・過去結果は変更しない。独立Review中の未承認表記は採点当時の状態で、後続の人間承認は別記録とする。
 
-旧チャット全文、History、過去の原回答・操作ログは標準入力に含めない。理由調査が必要な担当だけが、上記Issue/PRから対象箇所を追加で読む。新しい受験Workerは、この引き継ぎや整合レビュー、採点者向け計画、過去の回答を受け取らず、承認されたケース専用入力から始める。
+環境監査は通常Runtimeの制限制御を信頼する範囲。全内部動作や未知の取得経路不存在の完全証明ではない。Pは12/12・本文695字、M/Uも合格。全ケースを独立Sessionで実施し、過去チャット・他ケース・期待回答を配布していない。
 
-## 残っている仕事と再開条件
+## 次の仕事
 
-- **改訂のHuman Review・採用・main反映**：本書の存在を承認に読み替えない。
-- **試験環境の成立確認**：別の小Taskとして環境・モデル設定・記録・読取制約を確認する。未検証の隔離を達成済みと扱わない。
-- **次系列の試験**：承認済み改訂版のcommit、完成したケース入力、モデル設定、判断者、Ready記録を担当Issueで固定してから、新規Sessionで実施する。今回の修正指示を次試験のReadyへ流用しない。
+B-12の受入で、現在の知識引き継ぎの検証は完了する。tOSは実コンテンツ制作とフィードバックでリデザインし続ける。全体の最終完成・v0.1 Freeze・実制作TaskのReadyは未承認であり、次の制作対象、目的・範囲・入力・受入条件を具体化して個別に判断する。未決定事項は[Issue Map](ISSUE_MAP.md)を参照する。
 
-前の会話を読まないと上記の範囲・状態・再開条件を説明できない場合は、足りない引き継ぎ情報をIssueへ記録して補完する。新しいTaskを開始したことや、この引き継ぎの作成をDoneの根拠にしない。
+初回/R3の未達、R2中断、旧環境未成立、R4形式不適合は[結果入口](../outcomes/BOOTSTRAP_ACCEPTANCE.md)から辿れる。過去結果を遡及再採点しない。
+
+ローカルcloneは `/private/tmp/tos-b07-20260925`。使用前にremote・branch・statusを確認する。同期 `sources/` は読取専用。公開用ログ抜粋とhashはR5結果フォルダー、元rawログは `/private/tmp/tos-b12-r5-execution` に保存。

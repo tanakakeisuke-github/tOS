@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "human": "本会話のユーザー（tOS Human Owner）",
+  "approval_text": "試験を開始してください。",
+  "approved_at": "2026-09-25T00:48:41Z (approval recorded; exact user message timestamp unavailable)",
+  "scope": "B-12 R4 case M: only the explanation/diagnosis specified in CASE_TASK.md. No production, implementation, Freeze, Done or merge.",
+  "knowledge_commit": "7ab8b092544f6f00b8ca8d791ed6473cfef6cd43",
+  "task_input_commit": "ebdb73ef79e4e76ff3233dab00809fd2fb7f0e18",
+  "reason": "Human approved the presented R4 conditions to verify the revised knowledge handoff.",
+  "manifest_sha256": "4bef1998a2ae5db9c58fb8129a84b20617257cfb6331053e66243c9b10a57995",
+  "approval_reference": "https://github.com/tanakakeisuke-github/tOS/issues/25#issuecomment-5824774105",
+  "dependencies": "B-11 approved and merged; PR #28 knowledge and plan changes approved and merged. Older approval-state labels in fixed Knowledge are historical. This record specifies the applicable Knowledge version and actual Ready for this B-12 explanation/diagnosis only.",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium"
+}

@@ -1,6 +1,6 @@
 # B-11 — Bootstrap Knowledge Integration Review
 
-状態：B-11 / Issue #23 のReview成果案。Human Done承認前。対象は固定commit `73077f62aef01d78b7070b2a4cb655a55eee2f46`（B-10 main反映後）。本書は仕様の改訂、B-12の実施、Bootstrap Knowledgeの合格判定ではない。
+状態：B-11としてHuman Review承認済み（[PR #24](https://github.com/tanakakeisuke-github/tOS/pull/24)）。対象は固定commit `73077f62aef01d78b7070b2a4cb655a55eee2f46`（B-10 main反映後）。本書は仕様の改訂、B-12の実施、Bootstrap Knowledgeの合格判定ではない。
 
 ## 範囲と読み方
 
@@ -21,11 +21,11 @@
 
 | ID / 区分 | 出典・箇所と影響 | Owner案・解消状態 |
 |---|---|---|
-| **IR-01 / B-12前に解消** | 固定版の[START_HERE](../START_HERE.md) 3・11行、[ISSUE_MAP](ISSUE_MAP.md) 3・5・195行、[Technology Evolution](../specifications/TECHNOLOGY_EVOLUTION.md) 3行、[Radar](../research/TECHNOLOGY_RADAR.md) 3行はB-10をReview待ちとする。B-11の依存条件「B-01〜B-10承認済み」と表示が食い違い、Fresh WorkerがB-10を使えるか判断しにくい。B-10は[Issue #21](https://github.com/tanakakeisuke-github/tOS/issues/21) / [PR #22](https://github.com/tanakakeisuke-github/tOS/pull/22)でHuman Review承認・main反映済みとの現在の確認を、対象版の出所と分けて扱う。 | **B-11の入口・状態索引担当とB-10成果物Owner**：このDraft PRのREADME・START_HERE・Issue Map・B-10成果物・visionに状態修正案を反映した。独立Reviewerは表示と既存方針の整合を確認し、B-10本文に残る「案」も指摘・修正・再確認した。**独立Review済み／本PRのHuman承認待ち**。Reviewer自身はGitHub上のHuman承認記録を直接照合できず、PR #22のマージと本会話での承認は担当者が確認した。 |
-| **IR-02 / B-12前に解消** | 固定版の[ISSUE_MAP](ISSUE_MAP.md) 190行のOQ-05は「B-04受入前」とするが、[Knowledge Architecture](../specifications/KNOWLEDGE_ARCHITECTURE.md) 3・29〜33行はB-04承認済みかつ競合時の停止・改訂手順を定める。古い問いを現行の未決定事項と誤読し、受験Workerの「何が未決定か」の回答が揺れる。 | **Issue Map Owner**：このDraft PRでOQ-05を「B-04の手順は承認済み、個別の衝突は別判断」と区別する修正案を反映した。独立Reviewerは規範内容を変更していないことを確認した。**独立Review済み／本PRのHuman承認待ち**。 |
+| **IR-01 / 解消済み** | 固定版の[START_HERE](../START_HERE.md) 3・11行、[ISSUE_MAP](ISSUE_MAP.md) 3・5・195行、[Technology Evolution](../specifications/TECHNOLOGY_EVOLUTION.md) 3行、[Radar](../research/TECHNOLOGY_RADAR.md) 3行はB-10をReview待ちとする。B-11の依存条件「B-01〜B-10承認済み」と表示が食い違い、Fresh WorkerがB-10を使えるか判断しにくい。B-10は[Issue #21](https://github.com/tanakakeisuke-github/tOS/issues/21) / [PR #22](https://github.com/tanakakeisuke-github/tOS/pull/22)でHuman Review承認・main反映済みとの現在の確認を、対象版の出所と分けて扱う。 | **B-11の入口・状態索引担当とB-10成果物Owner**：PR #24でREADME・START_HERE・Issue Map・B-10成果物・visionの状態を修正し、独立Review後にHuman Review承認・main反映済み。固定版の古い表示はそのcommit時点の記録として残す。 |
+| **IR-02 / 解消済み** | 固定版の[ISSUE_MAP](ISSUE_MAP.md) 190行のOQ-05は「B-04受入前」とするが、[Knowledge Architecture](../specifications/KNOWLEDGE_ARCHITECTURE.md) 3・29〜33行はB-04承認済みかつ競合時の停止・改訂手順を定める。古い問いを現行の未決定事項と誤読し、受験Workerの「何が未決定か」の回答が揺れる。 | **Issue Map Owner**：PR #24でOQ-05を「B-04の手順は承認済み、個別の衝突は別判断」と区別し、独立Review後にHuman Review承認・main反映済み。 |
 | **IR-03 / 後続へ保留可能** | [Knowledge Architecture](../specifications/KNOWLEDGE_ARCHITECTURE.md) 15・25行はDecisionごとにIssueまたはReviewの一方を理由・承認記録の正本として指定するが、今回の固定版文書だけでは過去の各Decisionの実際の指定を検証できない。規則の二重定義は見つからなかったが、運用履歴の一意性は未確認。 | **各Decisionの担当Issue / Reviewer**：該当Decisionを実運用に使う時点で正本リンクと適用版を点検。B-12は文書から原則を説明する試験に限定し、個別の履歴監査を合格条件に含めない。 |
 
-重大な規範衝突、相対リンク先ファイル欠落、Core / Template / Project責務の逆転は上記範囲では見つからなかった。これは実装・運用での整合やB-12合格を示さない。IR-01・IR-02の状態表示の修正案はこのPRに含め、独立Reviewerが原規則との整合を確認した。追加の規範修正が必要なら所有する小さなTaskへSPLITする。B-11のHuman Done判断とB-12 Ready判断は、本PRの承認と反映版を確認してから行う。
+重大な規範衝突、相対リンク先ファイル欠落、Core / Template / Project責務の逆転は上記範囲では見つからなかった。これは実装・運用での整合やB-12合格を示さない。IR-01・IR-02の状態表示はPR #24で解消した。追加の規範修正が必要なら所有する小さなTaskへSPLITする。B-12の実施範囲・入力版とReady判断は[Issue #25](https://github.com/tanakakeisuke-github/tOS/issues/25)で確認する。
 
 ## Open QuestionsのB-12判定案
 

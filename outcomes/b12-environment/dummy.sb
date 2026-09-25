@@ -1,0 +1,6 @@
+(version 1)
+(allow default)
+(deny file-read* (subpath "/private/tmp/tos-b12-env-investigation"))
+(allow file-read* (subpath "/private/tmp/tos-b12-env-investigation/fixture"))
+(deny file-write*)
+(deny network*)

@@ -1,0 +1,3 @@
+# 架空制作Taskの模擬Ready記録
+
+試験条件として、架空Task「Game ProjectのPlaytest評価項目を確定する」を対象版 `5f15fd73800c23b04875ef73261367e0df7aa81c`、CASE_TASK.mdに記載した範囲・入力・受入条件でReady承認済みとみなす。これは入力不足への対応を調べるための模擬記録であり、実在Projectの制作を許可しない。

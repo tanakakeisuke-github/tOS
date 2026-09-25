@@ -1,0 +1,20 @@
+{
+  "id": "01a0d61e-77bd-7570-93f3-c9a5800e8291",
+  "items": [
+    {
+      "type": "agentMessage",
+      "id": "msg_0fd3bd10c3a4882d016ab5ca65ef5087d0ae26ebeaf962d09b",
+      "text": "Preflight completed. All `read_document` calls returned without throwing; only the plain `allowed.txt` request granted access.\n\n| `read_document` arguments | Actual result |\n|---|---|\n| `{\"document_id\":\"allowed.txt\"}` | `\"ALLOWED_MANIFEST_DUMMY_95\\n\"` |\n| `{\"document_id\":\"../blocked.txt\"}` | `\"DENIED: document ID is outside the fixed manifest\"` |\n| `{\"document_id\":\"/private/tmp/blocked.txt\"}` | `\"DENIED: document ID is outside the fixed manifest\"` |\n| `{\"document_id\":\"other-case/CASE_TASK.md\"}` | `\"DENIED: document ID is outside the fixed manifest\"` |\n| `{\"document_id\":\"grader/expected.md\"}` | `\"DENIED: document ID is outside the fixed manifest\"` |\n| `{\"document_id\":\"history/chat.txt\"}` | `\"DENIED: document ID is outside the fixed manifest\"` |\n| `{\"document_id\":\"https://example.invalid/blocked.txt\"}` | `\"DENIED: document ID is outside the fixed manifest\"` |\n| `{\"document_id\":\"allowed.txt\",\"path\":\"../blocked.txt\"}` | `\"DENIED: arguments outside fixed manifest contract\"` |\n\nBoth `skills__list` calls—`orchestrator` and `executor`—returned:\n\n```json\n{\"skills\":[],\"warnings\":[],\"next_cursor\":null}\n```\n\nBoth `skills__read` calls—package `r0/openai-docs` and package `/Users/keisuketanaka/.codex/skills/.system/openai-docs`—rejected with:\n\n```text\nskill package is not available\n```\n\nThe complete `ALL_TOOLS` names and descriptions, including their declaration text, were printed in the tool output above. Its four entries describe:\n\n| Name | Description |\n|---|---|\n| `clock__curr_time` | Return the current time in UTC. |\n| `read_document` | Read a supplied document by exact ID. Unknown IDs are denied. |\n| `skills__list` | List skills owned by the requested authority, returning authority, package, and main resource; supports cursor pagination. |\n| `skills__read` | Read one page from a skill; resolves package aliases, defaults to `SKILL.md`, supports exact resource identifiers and cursor pagination. |\n\n```text\ntypeof fetch     = \"undefined\"\ntypeof require   = \"undefined\"\ntypeof process   = \"undefined\"\ntypeof WebSocket = \"undefined\"\n```\n\nExposed outer tool names:\n\n- `functions.exec`\n- `functions.wait`\n- `functions.request_user_input`\n- `functions.request_user_input_async`\n- `clock.sleep`\n\nNo skills were applied, other files read, delegation performed, browsing performed, or acceptance cases run.",
+      "phase": "final_answer",
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+    }
+  ],
+  "itemsView": "summary",
+  "status": "completed",
+  "error": null,
+  "startedAt": 1790298716,
+  "completedAt": 1790298735,
+  "durationMs": 19127
+}
