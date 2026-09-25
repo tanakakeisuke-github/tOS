@@ -1,6 +1,8 @@
 # B-12 — Fresh Worker Acceptance Plan
 
-状態：**[Issue #27](https://github.com/tanakakeisuke-github/tOS/issues/27)の改訂は[PR #28](https://github.com/tanakakeisuke-github/tOS/pull/28)でHuman Review承認・main反映済み。** 実試験のReadyと環境成立は担当Issue #25で別に確認する。 旧承認済み基準は[固定版](https://github.com/tanakakeisuke-github/tOS/blob/5f15fd73800c23b04875ef73261367e0df7aa81c/bootstrap/ACCEPTANCE_PLAN.md)に保存する。この改訂をR2・R3等の原回答・原結果へ遡及適用せず、編集・再採点しない。
+**追加改訂案：Pの提出境界・字数計数を明確化する変更はHuman Review待ち。** 以下のPR #28承認済み状態は従来の契約に対するもの。本追加改訂の採用・再試験Readyを意味しない。変更内容と再試験条件は[字数契約の改訂記録](COUNTING_CLARIFICATION.md)。
+
+状態：**[Issue #27](https://github.com/tanakakeisuke-github/tOS/issues/27)の次版改訂案・Human Review待ち。** 試験開始の承認は別に確認する。 旧承認済み基準は[固定版](https://github.com/tanakakeisuke-github/tOS/blob/5f15fd73800c23b04875ef73261367e0df7aa81c/bootstrap/ACCEPTANCE_PLAN.md)に保存する。この改訂をR2・R3等の原回答・原結果へ遡及適用せず、編集・再採点しない。
 
 ## 目的と範囲
 
@@ -26,7 +28,7 @@
 
 一般の受入条件・配点・合格閾値・自己確認方法の正本は各受験Taskとし、Ready時に担当Issueからその固定版を参照する。採点者も同じ基準を使う。Pは6観点、各0〜2点、10/12点以上かつ(3)(4)(5)各2点を維持する。M/Uは共通して「可否・根拠・影響・判断者・再開条件」を回答する。ケース固有の正解の診断内容は渡さない。
 
-意味が同じ表現は同じ基準で評価し、キーワードの一致を必須にしない。回答に書かれていない主張を出典や採点者の推測で補完しない。P本文は700字以内。文字数算定と自己確認の提出形式はPに定める。
+意味が同じ表現は同じ基準で評価し、キーワードの一致を必須にしない。回答に書かれていない主張を出典や採点者の推測で補完しない。P本文は700字以内。提出形式・本文の境界・文字数算定の正本は[Pの公開契約](acceptance/P.md)で、WorkerとReviewerに同じ規則を適用する。固定見出し3行を境界とし、説明区間の原文からCR/LFだけを除いてUnicodeコードポイント数を数える。境界を推測・補完せず、Markdown表示後の文字数へ置き換えない。
 
 ## 採点者専用の判定要点（Workerへ非配布）
 
