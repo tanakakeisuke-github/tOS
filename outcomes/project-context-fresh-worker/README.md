@@ -1,6 +1,6 @@
 # Project Context — Fresh Worker Test Outcome
 
-状態：実施済み / この結果自体はHuman Acceptanceではない。B-12の契約・結果・Acceptance evidenceを変更または上書きしない。
+状態：初回実施済み / 期待した理解が得られた初期結果。この結果はProject Contextの有効性の証明またはHuman Acceptanceではない。B-12の契約・結果・Acceptance evidenceを変更または上書きしない。
 
 ## Purpose
 

@@ -48,7 +48,7 @@ Open Questionは担当Issueまたは所有するKnowledge文書に、問い、�
 
 ## Proposal — Layered Context
 
-**状態：Proposal / Human Review待ち。** この節はB-04で承認された正本・優先度・Task別入力の契約を置き換えない。採用されるまで、新しい必須入力や自動的なContext生成を意味しない。
+**状態：Proposal / Revision・Human Review待ち。** この節はB-04で承認された正本・優先度・Task別入力の契約を置き換えない。採用されるまで、新しい必須入力や自動的なContext生成を意味しない。最終承認後の状態更新とMerge手順は[Project Context Model](PROJECT_CONTEXT_MODEL.md#proposal-lifecycle-and-adoption)に従う。
 
 Projectをまたいで使うContextは、次の層で考える。上の層ほど共通だが小さく保ち、下の層ほど担当Taskに必要なものだけを選ぶ。
 

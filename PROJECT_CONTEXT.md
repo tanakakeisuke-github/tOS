@@ -1,6 +1,6 @@
 # tOS — Project Context
 
-状態：Project Contextのinstance / この導入ProposalとともにHuman Review待ち。これはProject全体の短い地図であり、承認済みのPurpose、Constitution、仕様、Decision、Outcome、担当Issueの正本を再定義しない。
+状態：Project Contextのinstance / Revision・Human Review待ち。これはProject全体の短い地図であり、承認済みのPurpose、Constitution、仕様、Decision、Outcome、担当Issueの正本を再定義しない。
 
 ## Project Summary
 
@@ -22,9 +22,30 @@ tOSは、設計意図・仕様・制作から得た知識を保存し、人間�
 
 実施状態の詳細と過去試験の原記録は[Issue Map](bootstrap/ISSUE_MAP.md)および[outcomes](outcomes/BOOTSTRAP_ACCEPTANCE.md)を正本の入口とする。
 
-## Current Focus and Goals
+## Architecture Roadmap — Future Design Areas
+
+以下は、現在のtOSと今後必要になり得る中間層を把握するための**未設計領域の地図**である。採用済みSpecification、実装順、着手承認ではない。
+
+`tOS Core → Studio Template Model → Organization / Cross-role Collaboration → Production Planning → Project Bootstrap → Creative Project → Production`
+
+| 領域 | 現在地と未設計の境界 | 参照先 |
+|---|---|---|
+| tOS Core | B-01〜B-12でPurpose、原則、Core境界、Knowledge、Small Task、Session等の土台を受入済み。ただしtOS v0.1全体の完成条件は未決定。 | [Purpose](specifications/PURPOSE.md)、[Core Architecture](specifications/CORE_ARCHITECTURE.md)、[Issue Map](bootstrap/ISSUE_MAP.md) |
+| Studio Template Model | Coreから媒体固有の制作へ具体化する境界と将来像はある。媒体をまたぐTemplateの基本構造、Role、責任、Workflow、Production Stage、Artifact、Quality Gateは未設計。 | [Core Architecture](specifications/CORE_ARCHITECTURE.md)、[Future Vision](vision/FUTURE_VISION.md) |
+| Organization / Cross-role Collaboration | Role / Actor / Agent / Modelの区別は定義済み。複数RoleがDiscussion・Decision・Taskを横断して協働する方法と、統合判断の責任は未設計。 | [Actor Model](specifications/ACTOR_MODEL.md)、[Discussion Protocol](protocols/DISCUSSION.md) |
+| Production Planning | Small TaskのTriage、Ready、Review、Doneは定義済み。Creative ProjectをMilestone、Epic、Feature、Small Taskへ分解し、上流計画と実行を結ぶModelは未設計。 | [Work Model](specifications/WORK_MODEL.md)、[Creation Lifecycle](vision/CREATION_LIFECYCLE.md) |
+| Project Bootstrap | Core、Studio Template、Project固有の目的・制約から制作の入口を用意する将来構想。入力、生成物、Role、Repository、Knowledge、Milestone、承認、自動化範囲は未設計。 | [Core Architecture](specifications/CORE_ARCHITECTURE.md)、[Future Vision](vision/FUTURE_VISION.md)、[Issue Map OQ-07](bootstrap/ISSUE_MAP.md) |
+| Creative Project / Production | 企画から制作、評価、完成、振り返りまでの長期方向はある。媒体別の実行方法・成果物・品質判断は将来のTemplateとProjectが所有し、現在はReadyではない。 | [Creation Lifecycle](vision/CREATION_LIFECYCLE.md) |
+
+この並びは概念上の接続候補であり、確定した依存順ではない。各領域の正本、Task分割、受入条件、設計順は、個別のTriageとHuman Gateで決める。
+
+## Current Focus
 
 現在、B-12後の次Taskを自動的に開始できる状態ではない。次の制作・改善Taskは、一つの目的、範囲、入力、受入条件、依存、停止点を具体化し、個別のReady承認を得てから開始する。仕事の状態とHuman Gateは[Work Model](specifications/WORK_MODEL.md)、着手時の照合は[Fresh Context](protocols/FRESH_CONTEXT.md)を参照する。
+
+## Current Milestone
+
+`N/A` — B-12は完了済みだが、次のProject-wide Milestoneは承認されていない。B-12完了をtOS全体の完成・v0.1 Freeze・Creative Project開始のReadyとして扱わない。
 
 ## Scope and Constraints
 
@@ -45,6 +66,8 @@ tOSは、設計意図・仕様・制作から得た知識を保存し、人間�
 - **OQ-01**：tOS v0.1の実際の範囲と完成条件。
 - **OQ-07**：Project Bootstrapの入力・生成物・承認・自動化の範囲。
 - **OQ-08**：Context CompilerとHuman Viewの実装時期・評価方法。
+
+Architecture Roadmapに示したStudio Template Model、Cross-role Collaboration、Production Planningの正本・設計順・受入条件は未決定であり、まだ承認済みSpecificationやReady Taskではない。
 
 問いの全一覧、影響、判断の入口は[Issue Map](bootstrap/ISSUE_MAP.md)を参照する。ここにない問いも、Taskの開始や受入を妨げる場合は担当IssueまたはReviewで扱う。
 
