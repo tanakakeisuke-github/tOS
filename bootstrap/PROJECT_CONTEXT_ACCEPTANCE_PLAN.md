@@ -1,6 +1,6 @@
 # Project Context — Fresh Worker Acceptance Plan
 
-状態：Proposalに対する新規の受入計画。B-12の契約・結果・Acceptance evidenceを変更または上書きしない。実施には、この計画とは別のTask、固定版、Ready承認、独立したFresh WorkerとReviewerを必要とする。
+状態：Proposalに対する新規の受入計画。B-12の契約・結果・Acceptance evidenceを変更または上書きしない。正式な受入実施には、この計画とは別のTask、固定版、Ready承認、独立したFresh WorkerとReviewerを必要とする。本PR内の二回の試行は内容到達性・整合性の初期確認であり、正式受入ではない。
 
 ## Objective
 
@@ -41,4 +41,4 @@
 
 候補commit `3367aaab1ac9c81dd74d2b419c786cd4897fbd53` に対して、元会話を渡さない独立Fresh WorkerがGitHub上のbranchをcloneして実行した。回答・閲覧資料・自己レビューの結果は[実行記録](../outcomes/project-context-fresh-worker/README.md)に保存する。
 
-この初回実行では期待した理解が得られたが、Project Contextの有効性を証明したものではない。Workerの閲覧制限は実行指示とWorkerの報告に基づくため、Toolの完全な隔離ログや人間の最終受入は含まれない。Revision後の質問4を含む内容整合確認は別記録へ保存する。Proposalの正式受入が必要な場合は、人間がこの限界を確認し、必要なら固定版・隔離・独立Reviewerを含む専用Taskで再実施する。
+この初回実行では期待した理解が得られたが、Project Contextの有効性を証明したものではない。Workerの閲覧制限は実行指示とWorkerの報告に基づくため、Toolの完全な隔離ログや人間の最終受入は含まれない。Revision後は候補commit `c8f0c4620ac4905f8952689b7538d1934821ebfc` で質問4を含む内容整合を再確認し、[Revision結果](../outcomes/project-context-fresh-worker-revision/README.md)に保存した。Proposalの正式受入が必要な場合は、人間がこの限界を確認し、必要なら固定版・隔離・独立Reviewerを含む専用Taskで再実施する。

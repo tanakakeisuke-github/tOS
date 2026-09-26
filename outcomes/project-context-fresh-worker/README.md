@@ -18,7 +18,9 @@
 
 このcommitはProposal branch上の候補であり、main反映やProposalのHuman Acceptanceを意味しない。
 
-## Raw Worker Response
+## Recorded Worker Response Summary
+
+以下はWorker回答の意味を変えず、Outcome用の文体に整理した要約である。逐語のToolログではない。
 
 ### 1. tOSとは何か
 
@@ -68,4 +70,4 @@ OQ-01（tOS v0.1の実際の範囲と完成条件）、OQ-07（Project Bootstrap
 
 ## Limitations and Next Decision
 
-Workerは実行指示に従いGitHub cloneだけを使ったと報告したが、完全なTool隔離ログは取得していない。このため、本記録はProject Contextの入口としての説明到達性を確認するOutcomeであり、隔離保証を含む厳格な受入試験やHuman Acceptanceではない。Human Reviewでは、この限界を受け入れるか、固定版・隔離・独立Reviewerを備えた再試験を求めるかを判断する。
+Workerは実行指示に従いGitHub cloneだけを使ったと報告したが、逐語のToolログと完全なTool隔離証拠は取得しておらず、採点も独立Reviewerによるものではない。このため、本記録はProject Contextの入口としての説明到達性を確認するOutcomeであり、隔離保証を含む厳格な受入試験やHuman Acceptanceではない。Human Reviewでは、この限界を受け入れるか、固定版・隔離・独立Reviewerを備えた再試験を求めるかを判断する。
