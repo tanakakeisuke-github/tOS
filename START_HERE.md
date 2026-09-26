@@ -2,6 +2,8 @@
 
 状態：B-01〜B-12は人間の受入承認済み。B-12はR5でP/M/Uすべて合格し、[Human Acceptance](outcomes/b12-r5/HUMAN_ACCEPTANCE.md)を記録した。tOS全体の最終完成やv0.1 Freezeを意味しない。
 
+Project全体の目的・背景・現在地・次の論点を短く把握する必要がある場合は、まず[Project Context](PROJECT_CONTEXT.md)を読む。これはGlobal Orientationの地図であり、[Purpose](specifications/PURPOSE.md)、[Constitution](CONSTITUTION.md)、担当IssueとそのInput Contextを置き換えない。
+
 1. [Purpose](specifications/PURPOSE.md)で目的・現在の範囲・未決定事項を確認します。
 2. [Constitution](CONSTITUTION.md)で判断原則とHuman Gateを確認します。B-02の原則は承認済みです。
 3. 自分に割り当てられたIssueを読み、Input Contextで指定された版と資料だけを追加で確認します。成果物・受入条件・依存関係・人間の承認点・停止点を確かめます。資料の正本・状態・優先度・食い違いの判断が必要な場合は[Knowledge Architecture](specifications/KNOWLEDGE_ARCHITECTURE.md)の該当節を読みます（B-04で承認済み）。[README](README.md)は資料の索引です。

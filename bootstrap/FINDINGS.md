@@ -39,6 +39,13 @@
 - **未確認**：最適な粒度、引き継ぎ負荷、品質改善量、独立Reviewを含めた総コスト。
 - **検証案**：Bootstrapの各Issueで読み込み量、説明の正確さ、Review指摘、修正・引き継ぎ負荷を記録する。認知負荷が大きい場合は分割案を見直す。
 
+## F-06 — Project全体の向きとTask局所入力
+
+- **Finding（懸念）**：Task Contextだけでも局所作業を始められる一方、Project全体の意味・背景・現在地・次の論点を短時間で復元できない可能性が、Project Context導入の検討時に実際に懸念された。
+- **Hypothesis**：小さなcanonical Project ContextをGlobal Orientationとして置き、Taskごとに選んだLocal Contextを組み合わせれば、長大な継続ChatとProjectを知らない完全Freshな開始の間を埋められる可能性がある。
+- **未確認**：理解時間・正確さ・誤解や重複の増減、適切な最小量、媒体やProject規模による差、維持コスト。
+- **検証案**：固定したProject Contextと`START_HERE.md`だけを入口にFresh WorkerがProjectの目的・現在地・未決定事項・Task開始前の確認事項を説明できるかを確認し、指定Input Contextだけの場合と比較する。結果・入力版・閲覧範囲・採点根拠は別のOutcomeに残す。
+
 ## 後続での扱い
 
 検証方法を選ぶ段階で、評価基準・入力版・観察者・実施条件を明示する提案です。B-12の受入テストは引き継ぎの可否を確認するもので、上記すべての仮説の因果を証明するものではありません。結果はOutcomeとして記録し、採用する変更だけをHuman Review後に仕様へ反映します。
