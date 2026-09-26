@@ -1,6 +1,6 @@
 # Project Context Revision — Fresh Worker Consistency Outcome
 
-状態：Revision後の内容整合確認を実施済み / 初回Fresh Worker試験と同じく、期待した理解が得られた結果であり、Project Contextの有効性の証明またはHuman Acceptanceではない。B-12の契約・結果・Acceptance evidenceを変更または再採点しない。
+状態：Revision後の内容整合確認を実施済み / 期待した理解が得られた初期確認として[Human Reviewで受入済み](../project-context-human-acceptance/README.md)。Project Contextの有効性の厳密な証明ではない。B-12の契約・結果・Acceptance evidenceを変更または再採点しない。
 
 ## Conditions
 

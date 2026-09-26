@@ -1,6 +1,6 @@
 # tOS — Project Context
 
-状態：Project Contextのinstance / Revision・Human Review待ち。これはProject全体の短い地図であり、承認済みのPurpose、Constitution、仕様、Decision、Outcome、担当Issueの正本を再定義しない。
+状態：Current / Human Review承認済み（[Project Context Human Acceptance](outcomes/project-context-human-acceptance/README.md)）。これはProject全体の短い地図であり、承認済みのPurpose、Constitution、仕様、Decision、Outcome、担当Issueの正本を再定義しない。
 
 ## Project Summary
 

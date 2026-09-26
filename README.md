@@ -15,7 +15,7 @@ tOS v0.1全体の範囲・完成条件は未確定（OQ-01）です。完成・�
 | 変わりにくい判断原則は何か | [Constitution](CONSTITUTION.md) — B-02で承認済み |
 | 担当作業をどこから始めるか | [Start Here](START_HERE.md) |
 | Project全体の目的・背景・現在地・次の論点を短時間で把握したい | [Project Context](PROJECT_CONTEXT.md) — 地図。Purpose・Constitution・Task入力の代用ではない |
-| 媒体を問わずProject Contextをどう構成するか | [Project Context Model](specifications/PROJECT_CONTEXT_MODEL.md) — Proposal / Revision・Human Review待ち |
+| 媒体を問わずProject Contextをどう構成するか | [Project Context Model](specifications/PROJECT_CONTEXT_MODEL.md) — [Human Review承認済み](outcomes/project-context-human-acceptance/README.md) |
 | tOS / Studio Template / Projectの境界は何か | [Core Architecture](specifications/CORE_ARCHITECTURE.md) — B-03で承認済み |
 | 正式な知識はどこに置き、どう読むのか | [Knowledge Architecture](specifications/KNOWLEDGE_ARCHITECTURE.md) — B-04で承認済み |
 | 検討をどうTaskへ分け、いつ着手・完了するか | [Work Model](specifications/WORK_MODEL.md) — B-05で承認済み |

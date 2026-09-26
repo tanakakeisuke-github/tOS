@@ -1,6 +1,6 @@
 # Project Context — Fresh Worker Acceptance Plan
 
-状態：Proposalに対する新規の受入計画。B-12の契約・結果・Acceptance evidenceを変更または上書きしない。正式な受入実施には、この計画とは別のTask、固定版、Ready承認、独立したFresh WorkerとReviewerを必要とする。本PR内の二回の試行は内容到達性・整合性の初期確認であり、正式受入ではない。
+状態：初期確認計画 / 二回の結果は[Human Reviewで初期確認として受入済み](../outcomes/project-context-human-acceptance/README.md)。B-12の契約・結果・Acceptance evidenceを変更または上書きしない。厳格な受入実施には、この計画とは別のTask、固定版、Ready承認、独立したFresh WorkerとReviewerを必要とする。本PR内の二回の試行は内容到達性・整合性の初期確認であり、有効性の厳密な証明ではない。
 
 ## Objective
 

@@ -1,6 +1,6 @@
 # Project Context Model
 
-状態：Proposal / Revision・Human Review待ち。これは媒体をまたぐProject Contextの責務とBase Schemaの提案であり、承認済みのProject固有仕様、TaskのReady条件、Studio Template、Context Compilerの実装を確定しない。
+状態：Human Review承認済み / Accepted Specification（[Project Context Human Acceptance](../outcomes/project-context-human-acceptance/README.md)）。これは媒体をまたぐProject Contextの責務とBase Schemaを定めるが、Project固有仕様、TaskのReady条件、Studio Template、Context Compilerの実装を確定しない。
 
 ## Purpose
 
