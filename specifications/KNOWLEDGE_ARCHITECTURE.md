@@ -46,6 +46,26 @@ Open Questionは担当Issueまたは所有するKnowledge文書に、問い、�
 
 将来のContext Compilerは、上記の選択と参照をTask別のContext Packageへまとめる構想にとどめる。自動抽出、優先度判定、承認判定、品質保証の方法や実装時期は本書で確定しない。
 
+## Proposal — Layered Context
+
+**状態：Proposal / Human Review待ち。** この節はB-04で承認された正本・優先度・Task別入力の契約を置き換えない。採用されるまで、新しい必須入力や自動的なContext生成を意味しない。
+
+Projectをまたいで使うContextは、次の層で考える。上の層ほど共通だが小さく保ち、下の層ほど担当Taskに必要なものだけを選ぶ。
+
+`OS → Studio → Project → Task → Relevant Knowledge`
+
+| 層 | Contextとして渡す役割 | 所有する詳細の例 |
+|---|---|---|
+| OS | 媒体を問わない原則・共通の作業と知識の境界を示す。 | Coreの仕様、Constitution |
+| Studio | 媒体の制作を具体化する前提を示す。 | Studio TemplateのRole、成果物、評価観点 |
+| Project | 一つの作品・製品の向きと現在地を短く示す。 | `PROJECT_CONTEXT.md` とそこから参照するProject固有の正本 |
+| Task | 今回の仕事を安全に開始・Reviewできる条件を示す。 | 担当Issue、Ready承認、目的・範囲・受入条件・停止点 |
+| Relevant Knowledge | Taskの判断に必要な正本と証拠だけを選ぶ。 | 指定されたSpecification、Decision、Outcome |
+
+原則は **「Global Contextは小さく提供し、Local ContextはTaskごとに選択する」** である。Project ContextはProject全体の地図であり、Purpose、Constitution、仕様、Decision、Outcome、担当Issueを複写して新しい正本にしない。Task ContextはProject Contextを読むことでReady、入力版、受入条件、依存、停止点の照合を省略しない。Relevant Knowledgeの選択、`Specification → Decision → Outcome → Transcript` の優先度、版・承認状態・矛盾時の停止は、既存の本書の規則に従う。
+
+全Project向けのProject Contextの責務・Base Schema・媒体固有extensionの境界は[Project Context Model](PROJECT_CONTEXT_MODEL.md)を提案する。Context Compilerは将来構想のままとし、このProposalは実装方式、自動選択、承認判定、品質保証を確定しない。
+
 ## 参照経路の例（架空）
 
 仮に「架空Projectの試作品についてPlaytest評価項目を整理する」Taskが承認されたとする。Workerは入口でPurposeとConstitution、担当Issueの目的・受入条件・基準commitを確認し、Issueが指定するCoreの境界、該当Studio Templateの評価観点、Project固有の目的と制約を読む。評価基準はそのTaskまたは所有する仕様から、前回の測定結果は指定されたOutcomeから取る。媒体の例や過去の会話を承認済み基準へ昇格させない。TemplateやProjectの該当資料がまだ存在しなければ、欠けた入力と影響をIssueに示し、その判断を要する作業を止める。
