@@ -38,6 +38,6 @@
 
 ## Current Execution Status
 
-このPRの作成時点では未実施である。理由は、Project Context導入前のSessionとRepositoryでは、元会話を知らない独立Worker、GitHubだけに限定した閲覧範囲、固定commit、Ready承認、独立Reviewerの条件を同時に証拠付きで成立させられないためである。現在の作成者による自己説明や同一Sessionでの確認をFresh Workerの結果として記録しない。
+候補commit `3367aaab1ac9c81dd74d2b419c786cd4897fbd53` に対して、元会話を渡さない独立Fresh WorkerがGitHub上のbranchをcloneして実行した。回答・閲覧資料・自己レビューの結果は[実行記録](../outcomes/project-context-fresh-worker/README.md)に保存する。
 
-このProposalが人間に承認・main反映された後、専用の小Taskで上記を固定し、実施・Review・人間の受入判断を別Outcomeに記録する。
+この実行はProject Contextの到達性を確認する新規のOutcomeであり、B-12の契約・結果を変更しない。Workerの閲覧制限は実行指示とWorkerの報告に基づくため、Toolの完全な隔離ログや人間の最終受入は含まれない。Proposalの正式受入が必要な場合は、人間がこの限界を確認し、必要なら固定版・隔離・独立Reviewerを含む専用Taskで再実施する。
