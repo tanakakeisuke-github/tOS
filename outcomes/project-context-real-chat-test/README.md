@@ -65,6 +65,13 @@ Project Context / Layered Context自体の承認範囲は、[Project Context Hum
 > - 目的、範囲、受入条件、依存、停止点
 >
 > これらが不足・矛盾・未承認の場合は、推測で補わず、作業を開始しません。Issue作成、ラベル変更、PRの作成・マージ、CI成功、AIの自己確認はReady承認の代替ではありません。
+>
+> 情報が不足していること：
+>
+> - tOS v0.1の具体的な範囲・完成条件・Freeze条件
+> - 次に選ぶTask、その優先順位、Ready承認
+> - Studio Template、Cross-role Collaboration、Production Planning、Project Bootstrapの具体設計
+> - Context Compiler / Human Viewの実装・評価方針
 
 ## Files Reported as Read
 
