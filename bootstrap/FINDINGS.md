@@ -46,6 +46,13 @@
 - **未確認**：理解時間・正確さ・誤解や重複の増減、適切な最小量、媒体やProject規模による差、維持コスト。
 - **検証案**：固定したProject Contextと`START_HERE.md`だけを入口にFresh WorkerがProjectの目的・現在地・未決定事項・Task開始前の確認事項を説明できるかを確認し、指定Input Contextだけの場合と比較する。結果・入力版・閲覧範囲・採点根拠は別のOutcomeに残す。
 
+## F-07 — 実際のFresh ChatにおけるGlobal OrientationとContext選択
+
+- **Finding（単一試行の観察）**：main反映後の`PROJECT_CONTEXT.md`と`START_HERE.md`を入口に、過去のtOS Discussionを渡さない新しいChatが、tOSのPurpose、B-01〜B-12の現在地、B-12とtOS全体完成・v0.1 Freezeの区別、未設計Architecture領域、Task開始前のHuman Gateを説明した。一方で、主要なOpen Questionsに加えてOQ-11も取得した。[Real Fresh Chat Context Test Outcome](../outcomes/project-context-real-chat-test/README.md)を出典とする。
+- **Hypothesis**：小さなGlobal OrientationとTask別に選ぶLocal Contextの組合せは、Project全体の理解に必要な情報へ到達させつつ、Repository全体の無条件な全読を避けられる可能性がある。正しい情報を取得できることと、その時点のContextとして必要十分であることは別に評価する必要がある。
+- **未確認**：再現性、Model差、入力量と理解品質の関係、最小かつ十分なKnowledge selection、OQ-11のような周辺情報が理解・誤解・効率へ与える影響、比較対象との差、長期の維持コスト。
+- **検証案**：固定版・同一質問・明示的な採点基準・複数の独立Fresh Workerを用い、Project Contextのみ、Project Context + `START_HERE.md`、Task別Input Contextなどの条件を比較する。各条件で参照されたファイル、得られた理解、不要または欠落した情報、停止判断をOutcomeとして保存し、仕様変更は別TaskのHuman Reviewで判断する。
+
 ## 後続での扱い
 
 検証方法を選ぶ段階で、評価基準・入力版・観察者・実施条件を明示する提案です。B-12の受入テストは引き継ぎの可否を確認するもので、上記すべての仮説の因果を証明するものではありません。結果はOutcomeとして記録し、採用する変更だけをHuman Review後に仕様へ反映します。
